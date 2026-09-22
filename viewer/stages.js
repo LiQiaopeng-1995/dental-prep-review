@@ -9,6 +9,8 @@ const shoulderById=new Map(shoulder?shoulder.cases.map(c=>[c.id,c]):[]);
 const baselineName=(shoulder&&shoulder.baseline_name)||'上一版 R6';
 if(shoulder)$('left-mode').options[0].textContent=baselineName;
 let current=0,stageId=null,serial=0,sync=false,view='front',sectionData=null,boundaryData=null;
+const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();
+let measurePtr=null;
 const C=()=>data.cases[current],SC=()=>shoulderById.get(C().id);
 const S=()=>C().stages.find(s=>s.id===stageId)||C().stages[0];
 const dirs={front:[0,-1,.1],back:[0,1,.1],sideA:[1,0,.1],sideB:[-1,0,.1],top:[0,0,1],bottom:[0,0,-1]};
@@ -25,6 +27,7 @@ function panel(id){
 }
 const left=panel('left'),right=panel('right');
 const ringOverlay=new THREE.Group();right.scene.add(ringOverlay);
+const measureOverlay=new THREE.Group();right.scene.add(measureOverlay);
 const ringInfo=()=>SC()?.report?.algorithm_report?.shoulder_ring;
 const fixedTooth=()=>SC()?.report?.algorithm_report?.geometry_policy==='preserve_all_input_faces';
 function ringReady(r){return r&&r.status==='applied'&&r.upper_boundary_display?.length&&r.growth_step?.length===r.upper_boundary_display.length}
@@ -134,6 +137,103 @@ async function renderShoulder(ticket,doFit){
  if(doFit)fit();section();showRing();$('status').textContent='已加载 · 左右视图联动';
 }
 function metric(label,val){const e=document.createElement('div');e.className='metric';const b=document.createElement('b');b.textContent=val;e.append(document.createTextNode(label),b);$('metrics').append(e)}
+function fmtNum(v,digits){return v==null||!Number.isFinite(Number(v))?'—':Number(v).toFixed(digits)}
+function circularAzDist(a,b){return Math.abs(((a-b+540)%360)-180)}
+function nearestShoulderBin(az,bins){if(!bins?.length)return null;let best=null,bestD=Infinity;for(const bin of bins){const d=circularAzDist(az,Number(bin.az));if(d<bestD){bestD=d;best=bin}}return best}
+/** 牙体显示坐标：x=近中、y=唇/颊侧，与 section_azimuth_deg 一致（0=唇侧，+90=近中）。 */
+function hitAzimuthDeg(point){return Math.atan2(point.x,point.y)*180/Math.PI}
+function syncMeasurePanel(){
+ const on=$('measure').checked;$('measure-panel').classList.toggle('hidden',!on);
+ if(!on)return;
+ const bins=C().shoulder_bins,ok=bins?.length&&(stageId==='step5'||stageId==='shoulder_regrade');
+ if(!ok)$('measure-result').textContent='当前阶段没有复判桶数据，请切到「⑤ 牙面分割」或「⑤b 肩台复判」后再点右侧网格。';
+ else if(!$('measure-result').dataset.filled)$('measure-result').textContent='测量已开：在右侧网格点一下（轻点，勿拖转）。未发布桶也会显示数字。';
+}
+function measureWidthText(bin){
+ const w=bin.台面宽中位_mm;
+ return w==null||!Number.isFinite(Number(w))?'台面宽 未检出':'台面宽 '+Number(w).toFixed(3)+' mm';
+}
+function measureTurnText(bin){
+ const turn=bin.转角中位_deg;
+ if(turn!=null&&Number.isFinite(Number(turn)))return '转折 '+Number(turn).toFixed(1)+'°';
+ const rmax=bin.最大转角_deg;
+ if(rmax!=null&&Number.isFinite(Number(rmax)))return '最大转角 '+Number(rmax).toFixed(1)+'°（无台面转折）';
+ return '转折 未检出';
+}
+function clearMeasureBin(){clear(measureOverlay);draw(right)}
+/** 测量真正用的那条径向剖线：过牙长轴(显示 z 轴)、方位角 azDeg 的平面 ∩ 网格，
+ * 只留朝外(径向≥0)一侧。返回线段坐标数组（与 Python _crown_branch 同一几何）。 */
+function radialProfileSegments(mesh,azDeg){
+ const center=azDeg*Math.PI/180;
+ const dirx=Math.sin(center),diry=Math.cos(center);
+ const nx=-diry,ny=dirx;             // 平面法向 = axis(0,0,1) × radial
+ const pos=mesh.geometry.getAttribute('position');
+ const idx=mesh.geometry.index?mesh.geometry.index.array:null;
+ const at=i=>idx?idx[i]:i;
+ const n=idx?idx.length:pos.count;
+ const P=i=>[pos.getX(i),pos.getY(i),pos.getZ(i)];
+ const d=i=>nx*pos.getX(i)+ny*pos.getY(i);     // 到剖面的有符号距离
+ const r=i=>dirx*pos.getX(i)+diry*pos.getY(i); // 沿径向的距离（>0 朝外）
+ const lerp=(a,b,t)=>[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t];
+ const segs=[];
+ for(let i=0;i<n;i+=3){
+  const a=at(i),b=at(i+1),c=at(i+2);
+  const da=d(a),db=d(b),dc=d(c);
+  const pts=[];
+  for(const [u,v,du,dv] of [[a,b,da,db],[b,c,db,dc],[c,a,dc,da]]){
+   if((du<0&&dv<0)||(du>0&&dv>0)) continue;
+   const t=du/(du-dv);
+   pts.push({p:lerp(P(u),P(v),t),rr:r(u)+(r(v)-r(u))*t});
+  }
+  if(pts.length===2&&Math.max(pts[0].rr,pts[1].rr)>=-0.02) segs.push(...pts[0].p,...pts[1].p);
+ }
+ return segs;
+}
+function highlightMeasureBin(bin,hitPoint){
+ clear(measureOverlay);
+ const mesh=right.group.children.find(o=>o.isMesh);
+ if(!mesh){draw(right);return}
+ const center=Number(bin.az);
+ const segs=radialProfileSegments(mesh,center);
+ if(segs.length) addLines(measureOverlay,segs,0xffe36b,7);
+ if(hitPoint){
+  const dot=new THREE.Mesh(
+   new THREE.SphereGeometry(0.45,16,12),
+   new THREE.MeshBasicMaterial({color:0xff5a1f,depthTest:false}),
+  );
+  dot.position.copy(hitPoint);
+  dot.renderOrder=8;
+  measureOverlay.add(dot);
+ }
+ draw(right);
+}
+function showMeasureHit(az,bin){
+ const pub=bin.发布?'已发布':'未发布';
+ $('measure-result').dataset.filled='1';
+ $('measure-result').textContent=
+  `方位角 ${az.toFixed(1)}° → 最近桶 ${Number(bin.az).toFixed(1)}°\n`+
+  `${measureWidthText(bin)} · ${measureTurnText(bin)}\n`+
+  `分类 ${bin.分类??'—'} · ${pub}`+(bin.状态?`（${bin.状态}）`:'');
+}
+function pickRightMeasure(event){
+ if(!$('measure').checked)return;
+ const bins=C().shoulder_bins;
+ if(!bins?.length||(stageId!=='step5'&&stageId!=='shoulder_regrade')){
+  $('measure-result').textContent='当前阶段没有复判桶数据，请切到「⑤ 牙面分割」或「⑤b 肩台复判」后再点右侧网格。';
+  delete $('measure-result').dataset.filled;return;
+ }
+ const rect=right.host.getBoundingClientRect();
+ if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)return;
+ pointer.x=((event.clientX-rect.left)/rect.width)*2-1;
+ pointer.y=-((event.clientY-rect.top)/rect.height)*2+1;
+ raycaster.setFromCamera(pointer,right.camera);
+ const hits=raycaster.intersectObjects(right.group.children,true).filter(h=>h.object.isMesh);
+ if(!hits.length){$('measure-result').textContent='未点到右侧网格，请再点唇/颊侧颈缘附近。';delete $('measure-result').dataset.filled;return}
+ const az=hitAzimuthDeg(hits[0].point),bin=nearestShoulderBin(az,bins);
+ if(!bin){$('measure-result').textContent='清单里没有可匹配的测量桶。';delete $('measure-result').dataset.filled;clearMeasureBin();return}
+ showMeasureHit(az,bin);
+ highlightMeasureBin(bin,hits[0].point);
+}
 function showStage(id,doFit=true){
  stageId=id;const s=S(),sc=SC(),isShoulder=id==='shoulder'&&!!sc;
  for(const b of $('stages').querySelectorAll('button'))b.setAttribute('aria-pressed',String(b.dataset.stage===id));
@@ -151,6 +251,7 @@ function showStage(id,doFit=true){
  const modes=new Set(s.left.concat(s.right).map(k=>C().models[k].mode));
  if(modes.has('label')||isShoulder)for(const [sid,name] of [[1,'切端/咬合面'],[2,'唇/颊侧'],[3,'舌侧'],[4,'近中'],[5,'远中'],[7,'肩台']]){const item=document.createElement('span');item.textContent='● '+name;item.style.color=data.palette[sid];$('legend').append(item)}
  if(modes.has('instance')){const item=document.createElement('span');item.textContent='● 实例分色';item.style.color='#63b4fa';$('legend').append(item)}
+ delete $('measure-result').dataset.filled;clear(measureOverlay);syncMeasurePanel();
  history.replaceState(null,'','#'+C().id+'/'+id);render(doFit);
 }
 function shoulderMetrics(sc){
@@ -173,6 +274,13 @@ function choose(id){
 for(const c of data.cases){const b=document.createElement('button');b.className='case';b.dataset.case=c.id;b.textContent=c.name;b.onclick=()=>choose(c.id);$('cases').append(b)}
 for(const b of $('views').querySelectorAll('[data-view]'))b.onclick=()=>{view=b.dataset.view;fit()};$('fit').onclick=fit;
 for(const id of ['wire','back-grey','left-mode','display-mode','linked','axes','boundary','removed'])$(id).onchange=()=>render(false);
+$('measure').onchange=()=>{delete $('measure-result').dataset.filled;if(!$('measure').checked)clearMeasureBin();syncMeasurePanel()};
+right.host.addEventListener('pointerdown',e=>{if(!$('measure').checked||e.button!==0)return;measurePtr={x:e.clientX,y:e.clientY}});
+right.host.addEventListener('pointerup',e=>{
+ if(!$('measure').checked||e.button!==0||!measurePtr)return;
+ const dx=e.clientX-measurePtr.x,dy=e.clientY-measurePtr.y;measurePtr=null;
+ if(dx*dx+dy*dy>25)return;pickRightMeasure(e);
+});
 $('section-angle').oninput=section;$('show-section').onchange=section;new ResizeObserver(section).observe($('section-chart'));
 $('show-ring').onchange=showRing;$('ring-step').oninput=showRing;$('ring-start').onclick=()=>{$('ring-step').value=0;showRing()};$('ring-complete').onclick=()=>{$('ring-step').value=$('ring-step').max;showRing()};
 window.addEventListener('hashchange',()=>{const id=location.hash.slice(1).split('/')[0];if(id&&id!==C().id)choose(id);else{const st=location.hash.split('/')[1];if(st&&st!==stageId)showStage(st)}});
