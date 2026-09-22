@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>配准对照 · 左 PRE / 右 POST</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root{color-scheme:dark;--bg:#10151c;--panel:#19222d;--line:#334355;--text:#e5ecf4;--muted:#aab9cb;--accent:#92c8ff;--hot:#f3bd45}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 'Microsoft YaHei',system-ui,sans-serif}
+    header{padding:14px 20px;border-bottom:1px solid var(--line)}
+    h1{margin:0;font-size:20px}p{margin:6px 0}
+    .muted{color:var(--muted);font-size:12px}
+    main{padding:14px 20px}
+    .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
+    button,select{font:inherit;padding:7px 12px;border:1px solid var(--line);background:#202e3e;color:var(--text);border-radius:6px;cursor:pointer}
+    button:hover{background:#34506d}button[disabled]{opacity:.45;cursor:not-allowed}
+    button.primary{background:#365e84;border-color:var(--accent)}
+    .panels{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .viewport{height:520px;position:relative;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel)}
+    .viewport canvas{display:block;width:100%;height:100%}
+    .label{position:absolute;top:10px;left:12px;pointer-events:none;text-shadow:0 1px 4px #000}
+    .chip{padding:2px 8px;border-radius:999px;background:#2a3b4d;font-size:12px;cursor:pointer}
+    .chip.current{background:#6b5420;color:var(--hot)}
+    .chip.done{background:#1f4a32}
+    .chip.skipped{background:#3a4450;color:#8a97a8}
+    #fatal{color:#ff8282;white-space:pre-wrap}
+    #status{color:var(--muted)}
+    #probe{min-width:12em}
+    .legend{font-size:12px;color:var(--muted)}
+    button.accept{background:#2d6a4f;border-color:#74c69d}
+    @media(max-width:800px){.panels{grid-template-columns:1fr}.viewport{height:360px}}
+  </style>
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<header>
+  <h1 id="page-title">配准对照 · 左 PRE / 右 POST</h1>
+  <p class="muted" id="reason">载入中…</p>
+  <p class="muted" id="summary"></p>
+</header>
+<main>
+  <div class="row">
+    <span>步骤</span>
+    <strong id="phase">在 POST 上点对应位置</strong>
+    <span class="muted" id="hint">PRE 地标已自动选出，请在右侧 POST 按 Shift + 右键点相同位置。</span>
+  </div>
+  <div class="row">
+    <span>当前备牙</span>
+    <b id="prep">—</b>
+    <button id="confirm-prep" class="primary" hidden>确认备牙，显示邻牙特征点</button>
+    <button id="back-prep">改选备牙</button>
+  </div>
+  <div class="row" id="feature-row">
+    <span>PRE 邻牙人眼地标</span>
+    <span id="chips"></span>
+  </div>
+  <div class="panels">
+    <div class="viewport" id="left"><span class="label" id="left-label">PRE · 地标已标好</span></div>
+    <div class="viewport" id="right"><span class="label" id="right-label">POST · 左键看误差 · Shift + 右键选对应点</span></div>
+  </div>
+  <div class="row">
+    <button id="accept" class="accept" hidden>接受此配准</button>
+    <button id="undo">撤销</button>
+    <button id="skip">跳过当前特征点</button>
+    <button id="submit" class="primary" disabled>提交：对应点对齐后做邻牙 ICP</button>
+    <button id="cancel">取消</button>
+    <span id="probe" class="muted">单击牙面查看误差</span>
+    <span id="status" role="status"></span>
+  </div>
+  <p class="muted legend">误差色：绿 0 mm · 黄约 0.25 mm · 红 1 mm · 灰 = 对侧没扫到。左栏 PRE、右栏 POST。左键单击看该点毫米；WARN 可直接接受。不接受则在右侧 POST 按住 Shift + 右键点与左侧编号地标同一位置。至少 4 对后提交：先求刚体初值，再做邻牙 ICP。普通拖动只旋转/平移。</p>
+  <pre id="fatal"></pre>
+</main>
+<script type="module" src="./product_register.js"></script>
+</body>
+</html>
