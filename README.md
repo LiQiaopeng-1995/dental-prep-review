@@ -1,6 +1,6 @@
-# 备牙评分 · 阶段审阅查看器
+﻿# 备牙评分 · 阶段审阅查看器
 
-12 个 tooth11 全瓷冠病例 + tooth36/tooth46 各一，逐步产物（step1~step10）+ 肩台定义复判。
+2026-09-23 交付复核快照：12 个 tooth11 全瓷冠病例，外加数据根里原有的 tooth36/tooth46。逐步产物（step1~step10）和肩台定义复判。
 
 在线查看：打开 `viewer/stages.html`（GitHub Pages 根路径会自动跳转）。
 

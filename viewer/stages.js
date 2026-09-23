@@ -189,13 +189,57 @@ function radialProfileSegments(mesh,azDeg){
  }
  return segs;
 }
-function highlightMeasureBin(bin,hitPoint){
+/** 线段串成折线，取最长一条，按显示 z 从低到高排列（颈缘 → 切端）。 */
+function chainProfile(segs){
+ const key=p=>p.map(x=>x.toFixed(4)).join(',');
+ const nodes=new Map(),adj=new Map();
+ const id=p=>{const k=key(p);if(!nodes.has(k)){nodes.set(k,p);adj.set(k,[])}return k};
+ for(let i=0;i<segs.length;i+=6){
+  const a=id(segs.slice(i,i+3)),b=id(segs.slice(i+3,i+6));
+  if(a===b)continue;adj.get(a).push(b);adj.get(b).push(a);
+ }
+ const seen=new Set();let best=[],bestLen=0;
+ const starts=[...adj.keys()].sort((a,b)=>adj.get(a).length-adj.get(b).length);
+ for(const s of starts){
+  if(seen.has(s))continue;
+  const path=[s];seen.add(s);let cur=s;
+  for(;;){const nxt=adj.get(cur).find(k=>!seen.has(k));if(!nxt)break;seen.add(nxt);path.push(nxt);cur=nxt}
+  let len=0;for(let i=1;i<path.length;i++){const a=nodes.get(path[i-1]),b=nodes.get(path[i]);len+=Math.hypot(a[0]-b[0],a[1]-b[1],a[2]-b[2])}
+  if(len>bestLen){bestLen=len;best=path}
+ }
+ const pts=best.map(k=>nodes.get(k));
+ if(pts.length>1&&pts[0][2]>pts[pts.length-1][2])pts.reverse();
+ return pts;
+}
+/** 桶内两条实测剖线（lo、lo+2.5°）里离点击方位角更近的一条。 */
+function measuredProfileAz(bin,clickAz){
+ const c=Number(bin.az),candidates=[c-2.5,c];
+ return candidates.reduce((a,b)=>circularAzDist(clickAz,a)<=circularAzDist(clickAz,b)?a:b);
+}
+function highlightMeasureBin(bin,hitPoint,clickAz){
  clear(measureOverlay);
  const mesh=right.group.children.find(o=>o.isMesh);
  if(!mesh){draw(right);return}
- const center=Number(bin.az);
- const segs=radialProfileSegments(mesh,center);
- if(segs.length) addLines(measureOverlay,segs,0xffe36b,7);
+ const profileAz=measuredProfileAz(bin,clickAz??Number(bin.az));
+ const pts=chainProfile(radialProfileSegments(mesh,profileAz));
+ if(pts.length>1){
+  const lift=p=>{const r=Math.hypot(p[0],p[1])||1;return new THREE.Vector3(p[0]+p[0]/r*.08,p[1]+p[1]/r*.08,p[2])};
+  const curve=new THREE.CatmullRomCurve3(pts.map(lift),false,'centripetal',0);
+  const tube=new THREE.Mesh(
+   new THREE.TubeGeometry(curve,Math.max(24,pts.length*2),.09,8,false),
+   new THREE.MeshBasicMaterial({color:0xff3b30}),
+  );
+  tube.renderOrder=7;
+  measureOverlay.add(tube);
+  const neck=new THREE.Mesh(
+   new THREE.SphereGeometry(.22,16,12),
+   new THREE.MeshBasicMaterial({color:0xffe36b}),
+  );
+  neck.position.copy(lift(pts[0]));
+  neck.renderOrder=8;
+  measureOverlay.add(neck);
+ }
+ $('measure-result').textContent+=`\n剖线 ${profileAz.toFixed(1)}°：红线从颈缘（黄点）沿牙面走到切端；台面宽和转折量的是黄点附近的颈缘段`;
  if(hitPoint){
   const dot=new THREE.Mesh(
    new THREE.SphereGeometry(0.45,16,12),
@@ -232,7 +276,7 @@ function pickRightMeasure(event){
  const az=hitAzimuthDeg(hits[0].point),bin=nearestShoulderBin(az,bins);
  if(!bin){$('measure-result').textContent='清单里没有可匹配的测量桶。';delete $('measure-result').dataset.filled;clearMeasureBin();return}
  showMeasureHit(az,bin);
- highlightMeasureBin(bin,hits[0].point);
+ highlightMeasureBin(bin,hits[0].point,az);
 }
 function showStage(id,doFit=true){
  stageId=id;const s=S(),sc=SC(),isShoulder=id==='shoulder'&&!!sc;
