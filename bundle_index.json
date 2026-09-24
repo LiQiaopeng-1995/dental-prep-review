@@ -3,12 +3,12 @@
   "validation": {
     "status": "passed",
     "pages": {
-      "stages": 14
+      "stages": 12
     },
-    "static_files": 26,
-    "data_files": 433,
-    "meshes": 292,
-    "data_bytes": 621070424
+    "static_files": 28,
+    "data_files": 374,
+    "meshes": 252,
+    "data_bytes": 534884439
   },
   "files": [
     {
@@ -37,6 +37,21 @@
       "sha256": "83e6b1b7bdd94e21e82fce050239d14f21dd11841963aa442796339085cfe250"
     },
     {
+      "path": "viewer/clinic.html",
+      "bytes": 334,
+      "sha256": "9df953e4ad4cec842883da79c28dd98a43b2629961c4fba9d42ea86e2b9753be"
+    },
+    {
+      "path": "viewer/clinic.js",
+      "bytes": 10964,
+      "sha256": "9ec5cfdc884d4fd8185a1c27381b7cd787eb5bb0d05ce0dc1df5af730b1838bc"
+    },
+    {
+      "path": "viewer/clinic_manifest.json",
+      "bytes": 1136416,
+      "sha256": "4c41bbd7b0accc84e3de85d1a79961f6f49b8fab27289fcee1ba15fd57acf23e"
+    },
+    {
       "path": "viewer/color-refinement.html",
       "bytes": 7698,
       "sha256": "16138c8c251760ecc6a4693dbf652b4210ae791abfda614213b4e44f29c5cd50"
@@ -58,13 +73,13 @@
     },
     {
       "path": "viewer/images/tooth11_case1_倒凹分层剖面图.png",
-      "bytes": 717199,
-      "sha256": "ebd434121f72bd2fac7a742625a0714c6135641589252e5a5e8f122c363d7c0a"
+      "bytes": 732474,
+      "sha256": "f8b45abc2706d3b87aa93adbee09b630a3026ec99786b23b0bda034f7ce92444"
     },
     {
       "path": "viewer/images/tooth11_case1_极坐标复判图.png",
-      "bytes": 185588,
-      "sha256": "b7614490b4adbcbca0635c004fc1fb600e7ba289bfe8e0e9c4b40255962c536b"
+      "bytes": 191455,
+      "sha256": "1d32c53e8b975c47467aebd3ad52cd5fa770fff42aadbd38bbd89d7ff32f5501"
     },
     {
       "path": "viewer/images/tooth11_case1_粗配准审阅图.png",
@@ -73,98 +88,98 @@
     },
     {
       "path": "viewer/images/tooth11_case1_精配准审阅图.png",
-      "bytes": 716337,
-      "sha256": "8aa40a7615b8f3fbd8fb388d54afd316d85c8df96fc9d1ecd55bb8fa44c62058"
+      "bytes": 715850,
+      "sha256": "ae7d0b60500e00e140e54489c428b7161a8b313cad6efe22535f7e1d8ed193ed"
     },
     {
       "path": "viewer/images/tooth11_case1_近中邻牙损伤审阅图.png",
-      "bytes": 319522,
-      "sha256": "084922fccc8703c6321a6a949cb9dcbe26615f43b5d00e1966e4aebb170be224"
+      "bytes": 324495,
+      "sha256": "1aa39e8011cd306bc1448a416d7d4c2bb7d3bea4db0bf05febfb107d3ca1976c"
     },
     {
       "path": "viewer/images/tooth11_case1_近远中向剖面图.png",
-      "bytes": 56496,
-      "sha256": "5d1252d852c2a1add78f9315ca7dbba9b801cfd84700fa70fa3735fddfaf66a1"
+      "bytes": 56395,
+      "sha256": "4cd56cb840bf4b297146456a546e99bac0353d76973dadbfd3eb8be0045e8665"
     },
     {
       "path": "viewer/images/tooth11_case1_远中邻牙损伤审阅图.png",
-      "bytes": 336869,
-      "sha256": "4dd24a4d52fbbeffc8eb138439fd0f5b3fb7a53d4f70845b99a609d21e120d39"
+      "bytes": 313207,
+      "sha256": "2fa83fbbad7b67d3a90c5c9f1542e4cf371a0b05668432a6568b4bef93d94dad"
     },
     {
       "path": "viewer/images/tooth11_case1_配准误差审阅图.png",
-      "bytes": 201593,
-      "sha256": "630304a6d65ff6e8269ce13f426a96e369751d17f916614d74f79f054bf6dc43"
+      "bytes": 201871,
+      "sha256": "9603c7fa96069780a6864e43cce417d8a350bfbe63b89f358310b41a3ea73369"
     },
     {
       "path": "viewer/images/tooth11_case1_预备量主视图.png",
-      "bytes": 287911,
-      "sha256": "3bc0ffee901d76fe5f95f37aab9706276ce4239e8a49acf2a628f9616313ca26"
+      "bytes": 296241,
+      "sha256": "de992a01b897e935806ccc9ab0da1ed82e138342170e712949a620c3d23000bc"
     },
     {
       "path": "viewer/images/tooth11_case1_颊舌向剖面图.png",
-      "bytes": 58254,
-      "sha256": "50d74da249f6c9b95c9cbef7886c52b43e2f2732872abb821177941e49c6f5c5"
+      "bytes": 57683,
+      "sha256": "7132c818ba89f691b3ad071a10641cd5b1dfef4a2815df5c6676cb501af1d4d8"
     },
     {
       "path": "viewer/images/tooth11_case2_倒凹分层剖面图.png",
-      "bytes": 698594,
-      "sha256": "112114fad80338035b1dacb6a4fde822c365efa4ab17a0fd5abed1cda2e19012"
+      "bytes": 698534,
+      "sha256": "63b9ef7f110fe63240194900b3a1e6d5321d7c4d52b2ce811f6711ee571d1395"
     },
     {
       "path": "viewer/images/tooth11_case2_极坐标复判图.png",
-      "bytes": 187105,
-      "sha256": "8013dd9e299125c42c99190c72afdae17ddb27810cd5b4f01b2e7e72474f8813"
+      "bytes": 180448,
+      "sha256": "333322271d26acd29a2e1d37d02af341bbee09e5d3065715d9450056ab5ef1bd"
     },
     {
       "path": "viewer/images/tooth11_case2_粗配准审阅图.png",
       "bytes": 555414,
-      "sha256": "ddc312095b307f0158930ad498cd6bab1d71ffee7ab034bb388ed3530ad44db3"
+      "sha256": "440a44d43db07f45656a4b9958eef8e01ecda6ba38c45ca0a587e45b0fe4d125"
     },
     {
       "path": "viewer/images/tooth11_case2_精配准审阅图.png",
-      "bytes": 732124,
-      "sha256": "1722907699749d38b7d82005a2ff240877482b82c01ee122b7d45849f55d67be"
+      "bytes": 733536,
+      "sha256": "9f9dcce45f3ec3fb5755ac0f99c08253e605e20663eca7a3c235608996726c24"
     },
     {
       "path": "viewer/images/tooth11_case2_近中邻牙损伤审阅图.png",
-      "bytes": 323709,
-      "sha256": "942f2e9da17564bb398253a5dea24f1bf5955c42632d0cf2afee29665e2d9542"
+      "bytes": 317296,
+      "sha256": "11cbb94288f1931bf1ededf6ef29526eadeee8fee8f19aed2e00ae62bc1477f6"
     },
     {
       "path": "viewer/images/tooth11_case2_近远中向剖面图.png",
-      "bytes": 50797,
-      "sha256": "ca912bcd88bb311e903d3f0e2397994738eaed78fd5bd2864e519b247919b7bd"
+      "bytes": 56279,
+      "sha256": "d851316811cb238dff0bf68891243815a070d621ee4234688589299799035a94"
     },
     {
       "path": "viewer/images/tooth11_case2_远中邻牙损伤审阅图.png",
-      "bytes": 332433,
-      "sha256": "c8dacd679447f67f4ec8f73947655df8c4ce1ffc6a048a52e0d523448ce5138a"
+      "bytes": 308116,
+      "sha256": "e09a926c42c006be503d8d870dc2ad7c8916bcc1747f8615f2f22284323b3f04"
     },
     {
       "path": "viewer/images/tooth11_case2_配准误差审阅图.png",
-      "bytes": 209453,
-      "sha256": "58708ade82872fe78a4bb2dcb80c3f87e9021a14d5a844176562eda3e24fcd71"
+      "bytes": 209479,
+      "sha256": "25759344bfda12b5731ed06f7a2a28cb00b231758a2779330c4acb959662799f"
     },
     {
       "path": "viewer/images/tooth11_case2_预备量主视图.png",
-      "bytes": 256002,
-      "sha256": "b63c77649d2636e4a3101059924db10d967cbd1f02d78dede0d182f0c542fabe"
+      "bytes": 255969,
+      "sha256": "f685323ddfdb7f136ace0f9ccf721703cd95b998d9fb02d29b523eeb52d0bb84"
     },
     {
       "path": "viewer/images/tooth11_case2_颊舌向剖面图.png",
-      "bytes": 57304,
-      "sha256": "fc9571b09ab09c3bd6bc2e32cfd015c89f384c5e411d5cd21caf292c54c84b90"
+      "bytes": 57259,
+      "sha256": "927f9e4e6f616b8c10c3dd689943ce2135d293d5d53e753f7ae46062c74f7706"
     },
     {
       "path": "viewer/images/tooth11_case3_1_倒凹分层剖面图.png",
-      "bytes": 718310,
-      "sha256": "b14041fc0226d2c539db33e7e1057e39e33af11e81c735ed3d46d8f9d28ff60c"
+      "bytes": 722264,
+      "sha256": "ca368ec6b874f28ca90889978a79835305007fb2d940d81a33ed4f149799a8ec"
     },
     {
       "path": "viewer/images/tooth11_case3_1_极坐标复判图.png",
-      "bytes": 183860,
-      "sha256": "32f545195add31e780b5ee30a92526bde558149dd37b4a708d9ea918e3894240"
+      "bytes": 185690,
+      "sha256": "394fd6d969c08f32faf15ae250fcaba74c5d121c887dbae41c9ff5302326a591"
     },
     {
       "path": "viewer/images/tooth11_case3_1_粗配准审阅图.png",
@@ -173,48 +188,48 @@
     },
     {
       "path": "viewer/images/tooth11_case3_1_精配准审阅图.png",
-      "bytes": 807471,
-      "sha256": "92576a43567c334c17e31232dff91465dfe24c7b6619b51dbc2b7a8b6d69416a"
+      "bytes": 808159,
+      "sha256": "9200164a3e2f8904248d679cc62e6627065bf744ee5e003cac4b081829766fa7"
     },
     {
       "path": "viewer/images/tooth11_case3_1_近中邻牙损伤审阅图.png",
-      "bytes": 318411,
-      "sha256": "a4651c4b8e2a6c1c81f7f63736ec805b6089f18b17d741043ea6129b770829e3"
+      "bytes": 325736,
+      "sha256": "013ddf0b4b38231218f0ccab714b5e42dd501a2c15c596a87804c457af40ffb7"
     },
     {
       "path": "viewer/images/tooth11_case3_1_近远中向剖面图.png",
-      "bytes": 54760,
-      "sha256": "2e3dd61ba496741199972f9c33aecb88ceabe649c2846b025602629ea20f12e6"
+      "bytes": 54597,
+      "sha256": "8f6b50236549a79565cbc293f30503d480681343b7016674f3e7a782da88c767"
     },
     {
       "path": "viewer/images/tooth11_case3_1_远中邻牙损伤审阅图.png",
-      "bytes": 326483,
-      "sha256": "5e472904ea139531f46e36f5d222a4e68dbccc0225aeeb4f4901b1402deef34d"
+      "bytes": 294656,
+      "sha256": "6a8479488919b94444eb93d44dd548a81ac16ed4848a072d72c79707ab67731e"
     },
     {
       "path": "viewer/images/tooth11_case3_1_配准误差审阅图.png",
-      "bytes": 185279,
-      "sha256": "873959fea350caae8d1809690d02f0e677561e2b0978025f27527f1e7f7eb11d"
+      "bytes": 185570,
+      "sha256": "252e09b6bb56e54d27224031ba3cc498730a99372b4fcd7786f728d22fa4c8b5"
     },
     {
       "path": "viewer/images/tooth11_case3_1_预备量主视图.png",
-      "bytes": 280662,
-      "sha256": "1a5b35b77a118e606cb1d511f94096defc17dcbf3518013633b1709f7b33deac"
+      "bytes": 279139,
+      "sha256": "6ebd98c948b3e1e7a427d3322a86dd9fd55e1aec0ee6ae98cc5643f9774f763c"
     },
     {
       "path": "viewer/images/tooth11_case3_1_颊舌向剖面图.png",
-      "bytes": 56743,
-      "sha256": "b7c55d8c18cd111d47fe3856b7582468f2695860fe000d01d0e84d9e3e9fc258"
+      "bytes": 56855,
+      "sha256": "dd028a5b4e5557209b73a82561ed5cc846b93563d7f81baf66a88419515f87f5"
     },
     {
       "path": "viewer/images/tooth11_case3_倒凹分层剖面图.png",
-      "bytes": 718458,
-      "sha256": "4acaaa3e74002afb26180b2c0be2202f2168a2c85d802c5d5d5b35ca54efe6b8"
+      "bytes": 715276,
+      "sha256": "231d1e17d8f1ee7932315912c882acc6d0d3f0af3b5b081543ee10c5267aa08a"
     },
     {
       "path": "viewer/images/tooth11_case3_极坐标复判图.png",
-      "bytes": 186972,
-      "sha256": "2d82d5b92312426d2d143988f8c0581bc9fcf4258a29e0f137e75e940468459e"
+      "bytes": 184616,
+      "sha256": "3393a48f36a151194c78b9ab1ccc315bc8ecf7d922805bfc47e6875c5ff4ee89"
     },
     {
       "path": "viewer/images/tooth11_case3_粗配准审阅图.png",
@@ -223,48 +238,48 @@
     },
     {
       "path": "viewer/images/tooth11_case3_精配准审阅图.png",
-      "bytes": 709523,
-      "sha256": "32b392503cec31e3dcc1ef33d2b699e5ed9e26adab27282198030ce6ba0a3dcf"
+      "bytes": 707929,
+      "sha256": "e0ef8b29e1368dff408aac5ec0e969ccdf838f55277dfe660f6976d4e550f766"
     },
     {
       "path": "viewer/images/tooth11_case3_近中邻牙损伤审阅图.png",
-      "bytes": 320477,
-      "sha256": "facf6ab251dc8e0fa2bc41614d8c59237802d5646387fa435bc5b7ec4bd433c2"
+      "bytes": 354799,
+      "sha256": "b4a434c8a609f1738ace672eabcc1c7239fa3bd0cabe6a6a5ac7964c0346c999"
     },
     {
       "path": "viewer/images/tooth11_case3_近远中向剖面图.png",
-      "bytes": 54925,
-      "sha256": "c9204fbecaf79e29472e81ade9d7cb215fe8dd60d46e598e21b5d017008dfcc1"
+      "bytes": 54841,
+      "sha256": "78734a09e09998a32a6bc6cb7d9ba44f33e160d1dafc59d6ac86bdc22f1e67d7"
     },
     {
       "path": "viewer/images/tooth11_case3_远中邻牙损伤审阅图.png",
-      "bytes": 373159,
-      "sha256": "8d7a28a0bf79aa1ce2419c5a1ec3fea6581b68bed8797a7a8185671fa9189fcf"
+      "bytes": 308121,
+      "sha256": "cc920abcb3e7181b33a0bb8d52437e95e0d088a8dc233f6cd6420bb66d5146bd"
     },
     {
       "path": "viewer/images/tooth11_case3_配准误差审阅图.png",
-      "bytes": 211632,
-      "sha256": "f6b2ace95fee5d12c2eb5a40a077d39b82dfe8774c967edfd576d615845871fd"
+      "bytes": 210470,
+      "sha256": "ccfe683b6af2ff7baeba90853a3ecffe699b53a2de59fcf04ea22ec67e0f36f4"
     },
     {
       "path": "viewer/images/tooth11_case3_预备量主视图.png",
-      "bytes": 280461,
-      "sha256": "6a3822b8d2646973c039531c0cedd1e620ec2924c3cf533f68e62e0ae84b78d9"
+      "bytes": 275987,
+      "sha256": "8133241a01e688d075546c2b564d017fba569fcdca42d5dc6870d86440a2daa7"
     },
     {
       "path": "viewer/images/tooth11_case3_颊舌向剖面图.png",
-      "bytes": 57552,
-      "sha256": "0ef48706858cec495322fc8ba7346d00d3de235785d180fde3a77c0c3d6ffc77"
+      "bytes": 57160,
+      "sha256": "92b1d4d00f7003281ebed7b31fe3caca22447dd2e2d0ee7c79aa7badb847e62a"
     },
     {
       "path": "viewer/images/tooth11_case4_1_倒凹分层剖面图.png",
-      "bytes": 660952,
-      "sha256": "5b0dca7d92950b7c099e9ddfac1b856b49d4d3ca1229ebb4c4838b7958e80040"
+      "bytes": 660964,
+      "sha256": "658c0c2253fcfc877297926783d01292e3ccb93a3428b7cb877fa452667ddf26"
     },
     {
       "path": "viewer/images/tooth11_case4_1_极坐标复判图.png",
-      "bytes": 187441,
-      "sha256": "6fb29297745ac7cf2f470a6e68f26077a31e21234cb9635d0f2aafa5a1b841b2"
+      "bytes": 187472,
+      "sha256": "f8699e42e41f2151b16d154223868df76be25545d79d2bb9871c81ea8da76250"
     },
     {
       "path": "viewer/images/tooth11_case4_1_粗配准审阅图.png",
@@ -278,8 +293,8 @@
     },
     {
       "path": "viewer/images/tooth11_case4_1_近中邻牙损伤审阅图.png",
-      "bytes": 322564,
-      "sha256": "bb43bf0ee74b3f6dc98e1ae6fafa40c0bddba4d10c6ab049ec90ceb835f540b2"
+      "bytes": 313485,
+      "sha256": "1347199613083b46ad3121dd73677be6e42afd36fd83f66d15cbe39d6982fc7e"
     },
     {
       "path": "viewer/images/tooth11_case4_1_近远中向剖面图.png",
@@ -288,8 +303,8 @@
     },
     {
       "path": "viewer/images/tooth11_case4_1_远中邻牙损伤审阅图.png",
-      "bytes": 326346,
-      "sha256": "668380bb80d32598cdde8b79b54e2b002a635ea04ca859bc8971a56a902aa39f"
+      "bytes": 320313,
+      "sha256": "f5cb2a388ad6eabea1418380f53094b432bf3d53bc6f020a3cc1ca4e37b54982"
     },
     {
       "path": "viewer/images/tooth11_case4_1_配准误差审阅图.png",
@@ -308,13 +323,13 @@
     },
     {
       "path": "viewer/images/tooth11_case4_倒凹分层剖面图.png",
-      "bytes": 658933,
-      "sha256": "9e5b8b5e317ef99328247fc39ff1820bd7a3a5553302c13c8dcea74c2af35d60"
+      "bytes": 658655,
+      "sha256": "dce88264856fdd33b734eac6a21c1589c59258fb32a842392477ebbb5dd9f977"
     },
     {
       "path": "viewer/images/tooth11_case4_极坐标复判图.png",
-      "bytes": 184670,
-      "sha256": "7ab911ce508312494ca44fd0b6e3b6a93c4124b7bc723f0ea949269f5cc5ad5a"
+      "bytes": 184208,
+      "sha256": "07cefe8131240cc9db5512a9efcb9ef02b213990775a8f7ca5001615c8368764"
     },
     {
       "path": "viewer/images/tooth11_case4_粗配准审阅图.png",
@@ -323,48 +338,48 @@
     },
     {
       "path": "viewer/images/tooth11_case4_精配准审阅图.png",
-      "bytes": 716076,
-      "sha256": "53ac9562dda488028be33433a8c17151e850a29abafb2ac2463395f4769d46f4"
+      "bytes": 717555,
+      "sha256": "894f1828c85a2961da7c0ee270842b9fe9cc3233b10b93245167947e1482fb50"
     },
     {
       "path": "viewer/images/tooth11_case4_近中邻牙损伤审阅图.png",
-      "bytes": 319934,
-      "sha256": "0365c5ec0f8e531067270f0c4c4768f3605715151a4a5d3d52b15276b1fe6b00"
+      "bytes": 311311,
+      "sha256": "1be7a6a3544ce089ea2e9ddbd2204e6f0c73b09ae102daae2637f89158a6101d"
     },
     {
       "path": "viewer/images/tooth11_case4_近远中向剖面图.png",
-      "bytes": 55583,
-      "sha256": "3ecdcad7482c573532df8ffe44fb3247bc0e76450a10023b47417c1eb8f8e920"
+      "bytes": 55727,
+      "sha256": "185d0877010cd6c70650806123c2ae45fbcadc6413d7593424d3972b52acd388"
     },
     {
       "path": "viewer/images/tooth11_case4_远中邻牙损伤审阅图.png",
-      "bytes": 331640,
-      "sha256": "f17a1dc904608fe09284a8457acfe37dffe9f363cb02b7613935d2e5a712612f"
+      "bytes": 315252,
+      "sha256": "63536f2b2c87d2be8b422328af77f5ebdb2eee77c0c530aa00a53d7aed9b105e"
     },
     {
       "path": "viewer/images/tooth11_case4_配准误差审阅图.png",
-      "bytes": 198550,
-      "sha256": "f48f871634f7d14ccf4a227e3155f31b3a139fc623766af495ce640885489857"
+      "bytes": 198191,
+      "sha256": "38c67c196138e2857e6975b7534bf74de5e0fbf7fe8829c32b8f1e65ade4a158"
     },
     {
       "path": "viewer/images/tooth11_case4_预备量主视图.png",
-      "bytes": 260330,
-      "sha256": "267b653bf58167d8cf85fcb14f26fc51efa17b5b984f414945db17060811b21e"
+      "bytes": 260105,
+      "sha256": "75ab5e726e986cb5efa85c97259d4ef570a64ee8bbef391c4d828a5d0173b315"
     },
     {
       "path": "viewer/images/tooth11_case4_颊舌向剖面图.png",
-      "bytes": 56288,
-      "sha256": "31847f5b5fbe9bc332f7e3a5fc9949ec6484a81db317527601e65cd26c53107b"
+      "bytes": 56398,
+      "sha256": "308844422a50e38cb9b3ce5127e27e858bbc25f3807f04a7b5a12c0a337a5a42"
     },
     {
       "path": "viewer/images/tooth11_case5_倒凹分层剖面图.png",
-      "bytes": 714675,
-      "sha256": "483efeda88fa2f8f6b0bd1acee44a24abe2289b9e6e2d520930f43e37e110e6c"
+      "bytes": 703716,
+      "sha256": "a238f87727c5b2cefa2ab5f3725a1abc44fb5e3a845601769ba4db78cfac660d"
     },
     {
       "path": "viewer/images/tooth11_case5_极坐标复判图.png",
-      "bytes": 196397,
-      "sha256": "c6a13d229502adfb35bae3cc91ce41079cbedaea5e79f92b921c0600ff1ed018"
+      "bytes": 195503,
+      "sha256": "5e9679eb9b3bd92f2ff6ce026613bdaeb1be976c536d225e938fd4f41a708795"
     },
     {
       "path": "viewer/images/tooth11_case5_粗配准审阅图.png",
@@ -373,98 +388,98 @@
     },
     {
       "path": "viewer/images/tooth11_case5_精配准审阅图.png",
-      "bytes": 706023,
-      "sha256": "78c9ca341fdcf8e6f9031aebb8810830558aa17a40f76321da3f8a70d7c4679d"
+      "bytes": 704956,
+      "sha256": "e592f91a02f08d4a1bf0c716a955943b18f1d8190c892cedb880785c69b1af48"
     },
     {
       "path": "viewer/images/tooth11_case5_近中邻牙损伤审阅图.png",
-      "bytes": 326543,
-      "sha256": "07893e118da705bd07def964e461294e538477c2e0d5863e61c679a176d1e549"
+      "bytes": 313130,
+      "sha256": "f3c16847d5b738e753dca946a1b38f0ef61e40279cd7ba45a69ffa02133e9a45"
     },
     {
       "path": "viewer/images/tooth11_case5_近远中向剖面图.png",
-      "bytes": 55072,
-      "sha256": "523b89615603e69618bb5d773ea2f334436ebf6485942528e82b76cbb7ba514c"
+      "bytes": 54116,
+      "sha256": "33e742e42c2b9657bb5db9db4c751466228a934c8bd5449fb5c2cb8571817fd6"
     },
     {
       "path": "viewer/images/tooth11_case5_远中邻牙损伤审阅图.png",
-      "bytes": 333088,
-      "sha256": "290a43fd5352a2e89207a4bb3954c723a8dcfd3bbe25576401e4a196650ea648"
+      "bytes": 318776,
+      "sha256": "f1fab23737dc6c7a6c7ad7c0cc87395995e576756aea5bd30dc25e30c785a0e6"
     },
     {
       "path": "viewer/images/tooth11_case5_配准误差审阅图.png",
-      "bytes": 209194,
-      "sha256": "ae6795ea0519807d6566ee6944180b8a3a6f3b6e7318a48932f2b0271bf6b679"
+      "bytes": 208433,
+      "sha256": "263708deec15b99254eeb366cde9ff5fd6fc25c8807844b689efaf69adb7e218"
     },
     {
       "path": "viewer/images/tooth11_case5_预备量主视图.png",
-      "bytes": 297502,
-      "sha256": "fe3be90405cb388cfad514def9013f29558f1497328c4b7945cbf0f17804625d"
+      "bytes": 296496,
+      "sha256": "6e580e6e2428a5b20876580b7c840a5e0d7c26525d21194f6c22e29c6d2ccf08"
     },
     {
       "path": "viewer/images/tooth11_case5_颊舌向剖面图.png",
-      "bytes": 57124,
-      "sha256": "fbce2ef04f8f3e6887ac10be98fa15e8d17a5f8e40be5c9f6aac851fd5386f22"
+      "bytes": 57243,
+      "sha256": "e90c4ffc9b2bf8bd7596645ddbfd923eeed83144c8bfa7c5b5579fa0759eb162"
     },
     {
       "path": "viewer/images/tooth11_case6_倒凹分层剖面图.png",
-      "bytes": 660739,
-      "sha256": "2136fda955acc50b7ffee35c6540dbea334c5fd8d00f2475200a9333479be9c0"
+      "bytes": 642537,
+      "sha256": "a5803a7b79623d4a542c55b226440ab81985afea4134421de0ebb95871e80deb"
     },
     {
       "path": "viewer/images/tooth11_case6_极坐标复判图.png",
-      "bytes": 197574,
-      "sha256": "be3a42ac27225a773c49f34d4efe12491dd6e1897f8f3081396a4eea169a2694"
+      "bytes": 196122,
+      "sha256": "263abdb2e312818d45496eb0097a7dbb47b47145bb4d392cd1f6147cd63f6173"
     },
     {
       "path": "viewer/images/tooth11_case6_粗配准审阅图.png",
       "bytes": 544688,
-      "sha256": "d798684b2d87081e4e8d8ba33704bf86a59c0a80301e1586eb6c35dd280c22ec"
+      "sha256": "b72d754c468ad20291c6381c94246509df545f1652b0e7ca5ab28a6118736ac3"
     },
     {
       "path": "viewer/images/tooth11_case6_精配准审阅图.png",
-      "bytes": 721370,
-      "sha256": "b59f91798df7d626e6cc2328baca20f765f3992c7887e0f989c7b6484093282f"
+      "bytes": 722505,
+      "sha256": "c11a3e97cea7df78e63eaa07b1f9cfdeb52923f255920e7778e8d7f2aebd6f25"
     },
     {
       "path": "viewer/images/tooth11_case6_近中邻牙损伤审阅图.png",
-      "bytes": 323195,
-      "sha256": "88dea82152d11ff23073400df8e43db8de5cefe1501a33d9f92807f8223ad062"
+      "bytes": 306368,
+      "sha256": "8f435f83b70589a17e976ff287e51e761bdf21c96ef646dc72d064c70cb4eaaa"
     },
     {
       "path": "viewer/images/tooth11_case6_近远中向剖面图.png",
-      "bytes": 56562,
-      "sha256": "b1884e2216aa6d28350d03c338fb4148600922a9b03ca3036c4233c4dc1ed8c8"
+      "bytes": 56411,
+      "sha256": "0780af2daa0d04d4d42a868b9a348bfc01f50f24ce91b343e975a9aae8f6d272"
     },
     {
       "path": "viewer/images/tooth11_case6_远中邻牙损伤审阅图.png",
-      "bytes": 329267,
-      "sha256": "de144c1fd295b0a4fbabfa8c428db3122bf4cbfc629ce8042130d56f3174dd7a"
+      "bytes": 334761,
+      "sha256": "23e513a38c742fd104ef206544a771d35c0308b250a088a08836f6a5551be174"
     },
     {
       "path": "viewer/images/tooth11_case6_配准误差审阅图.png",
-      "bytes": 197621,
-      "sha256": "a92f27519ebc1b0eecfe7435f1509b3cd4d60be295a7b78cd6122913fba3d155"
+      "bytes": 197301,
+      "sha256": "1663b5dff45b8c3af046f8f0881928f07044f7a19e6fc6b38c65ac7ec201eacb"
     },
     {
       "path": "viewer/images/tooth11_case6_预备量主视图.png",
-      "bytes": 299323,
-      "sha256": "c20ac24582122b233bd9428d66d00877e8959ccff0aa73911b28f8a343ef3f69"
+      "bytes": 300103,
+      "sha256": "41eaa7d32f46db0297ed3f4eb2eaa43254d1cb1149e0c9ab814b0a075330a315"
     },
     {
       "path": "viewer/images/tooth11_case6_颊舌向剖面图.png",
-      "bytes": 58086,
-      "sha256": "3fb4de7aa4de04b01e700b01ed8052e85efe91b4d855073134f291a7c918fe66"
+      "bytes": 57923,
+      "sha256": "ae8417a43e3fe8c9a321e0d72dbea74bca1180b52f0471b6982ae7bf6145b3cf"
     },
     {
       "path": "viewer/images/tooth11_case7_倒凹分层剖面图.png",
-      "bytes": 707342,
-      "sha256": "cb2c29ffcd6747088673f2f1d134ea5e4881cbf775511d41530f0b6a3b176e95"
+      "bytes": 708489,
+      "sha256": "560ec6e76f0ff2533ee2405f1f7d8af204d73b71b30a71677abae67b9927f068"
     },
     {
       "path": "viewer/images/tooth11_case7_极坐标复判图.png",
-      "bytes": 196481,
-      "sha256": "1e0f0665d66362953fa68afbbcb6850f2dad86f91ee6cf5688b7258380064f34"
+      "bytes": 195983,
+      "sha256": "5e71d4352cd800af7e4c3a28f831e20d415cc83ca5277eb8451409383a96c0e5"
     },
     {
       "path": "viewer/images/tooth11_case7_粗配准审阅图.png",
@@ -473,98 +488,98 @@
     },
     {
       "path": "viewer/images/tooth11_case7_精配准审阅图.png",
-      "bytes": 721453,
-      "sha256": "8da87f9e173ad0c8d39b310c3ff5b58ec97a46ae616ecdfa5af27eec534ce932"
+      "bytes": 720583,
+      "sha256": "7dfd22541a13afa63d0b4a04606f13b543288a717fcbb6c64c9bf685fd5daa47"
     },
     {
       "path": "viewer/images/tooth11_case7_近中邻牙损伤审阅图.png",
-      "bytes": 317656,
-      "sha256": "7a68f127ffc3556f16f77e56333452c90920ecac4cf2e0a81409ef2697d7c728"
+      "bytes": 306011,
+      "sha256": "1aa49ffa86b87360de9610d85918eb20617a296405b22748cacab2a39fd4120c"
     },
     {
       "path": "viewer/images/tooth11_case7_近远中向剖面图.png",
-      "bytes": 56283,
-      "sha256": "481c57a821a2e0fb3f0c0a8cb7b0d4e2896897c154e4ef96d5863164b7493fb2"
+      "bytes": 56423,
+      "sha256": "140c31e229dad0d8083dc4972a245c173bd2305f78f4c0ab7df26b7fe0f3aff9"
     },
     {
       "path": "viewer/images/tooth11_case7_远中邻牙损伤审阅图.png",
-      "bytes": 334049,
-      "sha256": "fe84f951e33499fd67cf7c303947d9bdf653408922831e4699d202c207de6fbb"
+      "bytes": 308516,
+      "sha256": "52ec0b28e94e095da0040571b6812dedc9f9ffd4dbd09c48c50d05b5f25ee7a1"
     },
     {
       "path": "viewer/images/tooth11_case7_配准误差审阅图.png",
-      "bytes": 209293,
-      "sha256": "83dbb416d4cae7cc1b71821db5d794469514dfba944eecc3596e3c5444b196c9"
+      "bytes": 208554,
+      "sha256": "a3c9457b622276b99577b1f25dd73b69e7a0d2bb3aa3f0449f95b5568fd54577"
     },
     {
       "path": "viewer/images/tooth11_case7_预备量主视图.png",
-      "bytes": 296287,
-      "sha256": "44203e2b23737edd4a7eaddfcb7205531008d4f839b2f7703dee22a6b05bb334"
+      "bytes": 296187,
+      "sha256": "e9aef51a1bd994a66335513a8fbec8f13d60e0808de3942adf47533321fb722d"
     },
     {
       "path": "viewer/images/tooth11_case7_颊舌向剖面图.png",
-      "bytes": 56985,
-      "sha256": "3884793356f0734db823ffd903b3d892881ad8e9f06dd8952cb8458c9d1f4bbe"
+      "bytes": 57310,
+      "sha256": "e6f2d05f04f0eade73926a784ef992e7eaf0a5f83ff8f5c3992952acc95f46e8"
     },
     {
       "path": "viewer/images/tooth11_test1_倒凹分层剖面图.png",
-      "bytes": 601268,
-      "sha256": "700d15a72554d196998c379ba2386d29724d1fd5804b32b3d2ee5f0289e91756"
+      "bytes": 600693,
+      "sha256": "12fa33e1a36a6e9370f5c4c9eb65305bcb520a755e5d66e17a861bd6560137b3"
     },
     {
       "path": "viewer/images/tooth11_test1_极坐标复判图.png",
-      "bytes": 194044,
-      "sha256": "9a8d10a0795093a1b3dd0fb531440cead54775372736aaf94e1eccd378b6424c"
+      "bytes": 193643,
+      "sha256": "58b1c14816807f922f21fe3554c68cca9e66f7b056cc5dcd99c684f5bee3bb3b"
     },
     {
       "path": "viewer/images/tooth11_test1_粗配准审阅图.png",
       "bytes": 569422,
-      "sha256": "ee60b554e90504e58d2fc84c863b1cd2b5f012334adafff4156bac653129d781"
+      "sha256": "dfd8a272bb4036a7a29f5eddae0038b2f853854f8c83d67aa6256b42c215e5ff"
     },
     {
       "path": "viewer/images/tooth11_test1_精配准审阅图.png",
-      "bytes": 740345,
-      "sha256": "b079fb39865010f54afa45b63e4b05065322dcc37f84b6eb374218eaa83814c1"
+      "bytes": 740804,
+      "sha256": "60c3692bb3748254ceeda845b574cb3f5f42c5455389b9d85a6a2271dd03c8a3"
     },
     {
       "path": "viewer/images/tooth11_test1_近中邻牙损伤审阅图.png",
-      "bytes": 382023,
-      "sha256": "07a06eb59330fce343663ef316efd450066532f78b6a02b4c39638d7851f11df"
+      "bytes": 365202,
+      "sha256": "483aeb2f7ca864e2cddcf3d55ef58b4f430620e59f0b218e5f5317cd26cbf984"
     },
     {
       "path": "viewer/images/tooth11_test1_近远中向剖面图.png",
-      "bytes": 57642,
-      "sha256": "94427f8cb070b7b159f6006cb1205a0d20023280d11aeb56c2dee4a3868cd3c9"
+      "bytes": 57637,
+      "sha256": "540fa31fc9484fd45b55209017e2b3c9f4d1c43cbe9c155baf05b61e063e08e5"
     },
     {
       "path": "viewer/images/tooth11_test1_远中邻牙损伤审阅图.png",
-      "bytes": 354904,
-      "sha256": "d27550d17135c533a5aa3b0bb45db6ace39a02dc58214d2d011af44b723807f1"
+      "bytes": 336271,
+      "sha256": "6f7d57841d992df3aaf99b4dfbb1136c982317f796960adc075a59ce1b225d2c"
     },
     {
       "path": "viewer/images/tooth11_test1_配准误差审阅图.png",
-      "bytes": 208947,
-      "sha256": "d71916ce1f8529553b3a74edb9aa42921c50545b8bea4cab2502314bc8163e76"
+      "bytes": 209190,
+      "sha256": "3db4f0a167d015e74f27f44fed41239c874e87615e2cfcdb5b9dadeb8bd46fc9"
     },
     {
       "path": "viewer/images/tooth11_test1_预备量主视图.png",
-      "bytes": 253910,
-      "sha256": "8bb4d0429c215a90571bdd6decbab0f35f6a14dc299aa257d3c863e39e388af5"
+      "bytes": 254285,
+      "sha256": "9672ca8903e7cce6e9fb9468e13e6d3c1f2d6533da567c326f180a539a1025e0"
     },
     {
       "path": "viewer/images/tooth11_test1_颊舌向剖面图.png",
-      "bytes": 56691,
-      "sha256": "de290bb2f7a0a90675d25037b48bccb6a5c2fa85aa3a806f9287144bed842943"
+      "bytes": 56341,
+      "sha256": "b2c7c075f81222914c5fde91afac8ddb726c80ff2931f80997153feb3f34394c"
     },
     {
       "path": "viewer/images/tooth11_test2_倒凹分层剖面图.png",
-      "bytes": 656639,
-      "sha256": "b9da940a3a776696ab8a06a9274c1bf66f975b971eafe9ad0ec4669fd193b7d9"
+      "bytes": 651450,
+      "sha256": "44a0a98c2d85d4148d5616a3acdc917cbde94297a1882344ebd9f3da0f49c1e9"
     },
     {
       "path": "viewer/images/tooth11_test2_极坐标复判图.png",
-      "bytes": 190584,
-      "sha256": "800ad5a3e789dbbe9c861e9fc50158b8e734a18a54de17b74649d146432a9406"
+      "bytes": 191065,
+      "sha256": "9459b5b601157d5aada583255735ee664af542a71b08f64fda86332beacbff70"
     },
     {
       "path": "viewer/images/tooth11_test2_粗配准审阅图.png",
@@ -573,48 +588,48 @@
     },
     {
       "path": "viewer/images/tooth11_test2_精配准审阅图.png",
-      "bytes": 682417,
-      "sha256": "6417c2681c383a8189788a5b4c4ff50da4e433405ccca847d1547510443281bc"
+      "bytes": 681835,
+      "sha256": "28e526d7aaadf1d03eb71d87ddfca16c4ab155030044021418a1bbbd42dced68"
     },
     {
       "path": "viewer/images/tooth11_test2_近中邻牙损伤审阅图.png",
-      "bytes": 346839,
-      "sha256": "23391d9ece13ba3fba8def677eacf2caec94691f8062b41b69e6a857ae4f90e1"
+      "bytes": 357294,
+      "sha256": "2741391753d380b59e9b5dcf1f2799e37216a7dc864176c2a98c786d483064fd"
     },
     {
       "path": "viewer/images/tooth11_test2_近远中向剖面图.png",
-      "bytes": 54124,
-      "sha256": "c918982ecf261d95427d22f6438df09e23fc6d38a9ed79f1e575a029e1852532"
+      "bytes": 54104,
+      "sha256": "b0504c06c7c734362d81df89d2b781caa06a9e8219fd9008c27366515170fa0f"
     },
     {
       "path": "viewer/images/tooth11_test2_远中邻牙损伤审阅图.png",
-      "bytes": 360869,
-      "sha256": "c6dad7d3318684c0ad99893e1355cbc41a4ac79c799a9e15f6439383e0ca0117"
+      "bytes": 321593,
+      "sha256": "0a9c9113e9b253c9c8c5604f5c393f955eb00531d783572be511a05ab2b3c30e"
     },
     {
       "path": "viewer/images/tooth11_test2_配准误差审阅图.png",
-      "bytes": 213513,
-      "sha256": "66194c9cd3e9db5664291299359a12d028381fe43d0397493e2183665c06cfba"
+      "bytes": 214682,
+      "sha256": "ee2a451dd01174975c5660635b15e1cc756eab591b72a80a081bf33d9f324468"
     },
     {
       "path": "viewer/images/tooth11_test2_预备量主视图.png",
-      "bytes": 270729,
-      "sha256": "b0a5c95bd339d8376b57ae6179d04d2af1124abefdd7ad298ca02f339fce87e8"
+      "bytes": 270564,
+      "sha256": "b9d9446a740df4643fa8bfe46427e3fb90ffc37f12c02640417de3238c963d43"
     },
     {
       "path": "viewer/images/tooth11_test2_颊舌向剖面图.png",
-      "bytes": 56182,
-      "sha256": "41218a2af2cf262ee2b41443a59618c7b6b766cac98674b52eb241b06ebe4b0a"
+      "bytes": 56116,
+      "sha256": "f7add7d8e4c711c59efcce6406056f8876fa4d72e9d3cadbb7c0c0f84912199d"
     },
     {
       "path": "viewer/images/tooth11_test3_倒凹分层剖面图.png",
-      "bytes": 607444,
-      "sha256": "564ab290413a4379ff51ce95b7a6cdcd1dfc2a1f288057010d8fe4ea086094fb"
+      "bytes": 599325,
+      "sha256": "397857e314d44a1e9ccd9dd0be080bc17ff5a5e8c9c368ff9ec5162fe6283ebc"
     },
     {
       "path": "viewer/images/tooth11_test3_极坐标复判图.png",
-      "bytes": 194177,
-      "sha256": "a9b88b4d72c171d74aeaab480d415cafc88075fd2c759d7ab75fcd1ad0b5c46e"
+      "bytes": 193384,
+      "sha256": "239edf289fdffd9da42cb2a7689356149f46e29abd6d085aeb1420fd05a36300"
     },
     {
       "path": "viewer/images/tooth11_test3_粗配准审阅图.png",
@@ -623,138 +638,38 @@
     },
     {
       "path": "viewer/images/tooth11_test3_精配准审阅图.png",
-      "bytes": 723532,
-      "sha256": "ca4982bfcac77868500fc30ed20c856ae8d15654a651216f74a94c381db43a2f"
+      "bytes": 725298,
+      "sha256": "ae908034a8354849b29fad00a06789c970e95341a6893d440fc7e95f5b220ab4"
     },
     {
       "path": "viewer/images/tooth11_test3_近中邻牙损伤审阅图.png",
-      "bytes": 336951,
-      "sha256": "ac355634cf3db7c4a9b529545a929d40a04d1106308bb5314f1fd32b37d5c0cd"
+      "bytes": 324005,
+      "sha256": "53ad977b87b85ad0084b3644e57d8ecbc00c06431a02d7280eaa89d4faf8a7f2"
     },
     {
       "path": "viewer/images/tooth11_test3_近远中向剖面图.png",
-      "bytes": 57783,
-      "sha256": "7afe96d280e5e46a3086184a98a55566bb7a0034d60a7ad579a96fc478a6e797"
+      "bytes": 57758,
+      "sha256": "0ce4a80cdecd94d245d6cee8c02c69ba0ce55dcfc3f99d2be6507c17e7c2af77"
     },
     {
       "path": "viewer/images/tooth11_test3_远中邻牙损伤审阅图.png",
-      "bytes": 359320,
-      "sha256": "afd2703e5daa971da0c38f16a092ff18b7a7d8ab4bd8c9f92f4ca27fbe093244"
+      "bytes": 345157,
+      "sha256": "8fd855c6e75d5ef0e90896fbedb91b664333e75fd60575d15901d2fab3fcba69"
     },
     {
       "path": "viewer/images/tooth11_test3_配准误差审阅图.png",
-      "bytes": 193443,
-      "sha256": "b1fffb2fa2a5367571973dcff3a4417535cbf0ed4c072daa06b3f57c4df733ff"
+      "bytes": 190978,
+      "sha256": "41fe0da2e23b11befde85de905dd6045bd52f66cc53e5dc97ce327d82a8ac905"
     },
     {
       "path": "viewer/images/tooth11_test3_预备量主视图.png",
-      "bytes": 262123,
-      "sha256": "baacb4c8217b1e0566ae8358e961b55abafe5e65055cc11c136d6849b4b48cfa"
+      "bytes": 261058,
+      "sha256": "6eef12275370d961afe218d37c2bdaeb09ab9255d2aa252d91778f6f2aacd743"
     },
     {
       "path": "viewer/images/tooth11_test3_颊舌向剖面图.png",
-      "bytes": 57631,
-      "sha256": "2f7cb5836fd5ff815207d530aaac105091c2118aeff4ddb420d5fb2a0833eff6"
-    },
-    {
-      "path": "viewer/images/tooth36_case1_倒凹分层剖面图.png",
-      "bytes": 745684,
-      "sha256": "7496e123a473e9a5ce19ac80164e3ad4f344d766faab80fe75cbad3f07eb8d2b"
-    },
-    {
-      "path": "viewer/images/tooth36_case1_粗配准审阅图.png",
-      "bytes": 594634,
-      "sha256": "bada1695f2e7cb4d30df1066862d641dfb1a48bab17e5648fbfea8e833a7a6dd"
-    },
-    {
-      "path": "viewer/images/tooth36_case1_精配准审阅图.png",
-      "bytes": 774665,
-      "sha256": "0f6a2f26b05f6207b9f1238c03e1fc2c596a826530ee22163f3ff091518433c0"
-    },
-    {
-      "path": "viewer/images/tooth36_case1_近中邻牙损伤审阅图.png",
-      "bytes": 311798,
-      "sha256": "8bbf15776041e0495993dceaadd43a4974b4f4d5fdcf1db64c099ca3873b4050"
-    },
-    {
-      "path": "viewer/images/tooth36_case1_近远中向剖面图.png",
-      "bytes": 56337,
-      "sha256": "13aef8d6a52a0ffc30792a2ff6008d6bbc216c1012f4d0967a99ee5341dfac89"
-    },
-    {
-      "path": "viewer/images/tooth36_case1_远中邻牙损伤审阅图.png",
-      "bytes": 357609,
-      "sha256": "3ece38e27638f1c2d84319272994a96ad881640f7432de5a573745712e38721b"
-    },
-    {
-      "path": "viewer/images/tooth36_case1_配准误差审阅图.png",
-      "bytes": 170843,
-      "sha256": "c6baa95ff2b1c46f321af36f2265379fb67cbebc3c686ff9aad7479fbeafe9bc"
-    },
-    {
-      "path": "viewer/images/tooth36_case1_预备量主视图.png",
-      "bytes": 249201,
-      "sha256": "70aa9145611cce7956b85c62af5217435cb4c96c6096d8460087ec3daf291bde"
-    },
-    {
-      "path": "viewer/images/tooth36_case1_预备面多视图.png",
-      "bytes": 1456560,
-      "sha256": "c63f51ac83e738bd5109d0c9bc6eac8e617e6e8cb901ce0d5f0c5081582783c6"
-    },
-    {
-      "path": "viewer/images/tooth36_case1_颊舌向剖面图.png",
-      "bytes": 60927,
-      "sha256": "3da80a648cf80192794f2ef4fad5bbcde3cfff0acded1e06fab33e179d84c804"
-    },
-    {
-      "path": "viewer/images/tooth46_test1_倒凹分层剖面图.png",
-      "bytes": 750714,
-      "sha256": "91805e76a8d1069fad7a39d6f992472cc31f0f0994c6f26dc08c2f5cd71068f5"
-    },
-    {
-      "path": "viewer/images/tooth46_test1_粗配准审阅图.png",
-      "bytes": 560898,
-      "sha256": "4f56360845afaaf711b7541346acb943fd3bdd6fe65dbe2778c9acc566e8cc8c"
-    },
-    {
-      "path": "viewer/images/tooth46_test1_精配准审阅图.png",
-      "bytes": 772051,
-      "sha256": "ee0ed743c7f445fb92dfab57aa6a08a6161ef755baf7a6f85fb1d33f921c53f4"
-    },
-    {
-      "path": "viewer/images/tooth46_test1_近中邻牙损伤审阅图.png",
-      "bytes": 333230,
-      "sha256": "400885e9bbf764df5d813c2446d53e9236257e6beb1760a080acccbc4dfb6f00"
-    },
-    {
-      "path": "viewer/images/tooth46_test1_近远中向剖面图.png",
-      "bytes": 59516,
-      "sha256": "d36fc24c95a3144190f3046a3725717cafeb3f65108e61488d7672c14097922f"
-    },
-    {
-      "path": "viewer/images/tooth46_test1_远中邻牙损伤审阅图.png",
-      "bytes": 364363,
-      "sha256": "52d43eccd7a8f16e836463f9162b25f44bdb7fc44675d8e0ead1fcfc30274e79"
-    },
-    {
-      "path": "viewer/images/tooth46_test1_配准误差审阅图.png",
-      "bytes": 160845,
-      "sha256": "596f022547977cbd26296088e785b3920c0e128ecf354bab412b34d70e302b5c"
-    },
-    {
-      "path": "viewer/images/tooth46_test1_预备量主视图.png",
-      "bytes": 206298,
-      "sha256": "4420826d5b55f4448e113e25f276251c1f1ff4ab1aaf3670eea350e0f3c712aa"
-    },
-    {
-      "path": "viewer/images/tooth46_test1_预备面多视图.png",
-      "bytes": 1205639,
-      "sha256": "17161a8edf29adc187055556005ef4210ba635ac20d698f88d46034b957f1eec"
-    },
-    {
-      "path": "viewer/images/tooth46_test1_颊舌向剖面图.png",
-      "bytes": 58619,
-      "sha256": "b9376ed890ac2e3a76b3dca8422694c6bdeacdc127039fb6a512b3eed3e47c79"
+      "bytes": 57025,
+      "sha256": "0540c3ceca0c7f1baf4ad99c2ea4f4f1065993d6cf536e3090579a131d69947c"
     },
     {
       "path": "viewer/index.html",
@@ -784,7 +699,7 @@
     {
       "path": "viewer/meshes/tooth11_case1_m05.bin",
       "bytes": 4513164,
-      "sha256": "c58a05a2a030e4fb4e19f7fc5e5ba780de6c35bd28b839ea3d7402d265d919e1"
+      "sha256": "e5a3d992aa1e63347bf58a4076d0665ed7df8e222821f3c6140cfe19deb9d0dc"
     },
     {
       "path": "viewer/meshes/tooth11_case1_m06.bin",
@@ -793,28 +708,28 @@
     },
     {
       "path": "viewer/meshes/tooth11_case1_m07.bin",
-      "bytes": 388404,
-      "sha256": "3692788eaa9c969b87aa18cc0192f9e2cb580641075eb5cd7536cd9ab9a04808"
+      "bytes": 374328,
+      "sha256": "f99f82e90d46fc29366c92b62646ff5f743e6ced710a868f4a47c3090fc1f946"
     },
     {
       "path": "viewer/meshes/tooth11_case1_m08.bin",
-      "bytes": 388404,
-      "sha256": "3692788eaa9c969b87aa18cc0192f9e2cb580641075eb5cd7536cd9ab9a04808"
+      "bytes": 374328,
+      "sha256": "f99f82e90d46fc29366c92b62646ff5f743e6ced710a868f4a47c3090fc1f946"
     },
     {
       "path": "viewer/meshes/tooth11_case1_m09.bin",
-      "bytes": 1562756,
-      "sha256": "83ac62c6f2a03cb7dcba02415bd16e7d00672187fbb9c70288baebc30648c819"
+      "bytes": 1611068,
+      "sha256": "85e218dd31bcd32bbd919403a37a478a52f5b08d59f7c01a34e87c050ca98c60"
     },
     {
       "path": "viewer/meshes/tooth11_case1_m10.bin",
-      "bytes": 1562756,
-      "sha256": "83ac62c6f2a03cb7dcba02415bd16e7d00672187fbb9c70288baebc30648c819"
+      "bytes": 1611068,
+      "sha256": "85e218dd31bcd32bbd919403a37a478a52f5b08d59f7c01a34e87c050ca98c60"
     },
     {
       "path": "viewer/meshes/tooth11_case1_m11.bin",
-      "bytes": 388956,
-      "sha256": "01bcea39235209e44249832b7cdf9bb5919f7aa04589e6a4aeedb24aa9e1fb21"
+      "bytes": 401828,
+      "sha256": "017f136925bbd1f1db27484372dc85dbc68d3d45667ef4fa158560fb597c8640"
     },
     {
       "path": "viewer/meshes/tooth11_case1_m12.bin",
@@ -823,8 +738,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case1_m13.bin",
-      "bytes": 1562756,
-      "sha256": "c6e11634f284e00f6222579a27e29d7452739f8b93f4c8568946d9bb15c33581"
+      "bytes": 1611068,
+      "sha256": "1739f70c25d26788493ee5495278ba349ca299a9284363ddb6cfb68390b4d338"
     },
     {
       "path": "viewer/meshes/tooth11_case1_m14.bin",
@@ -833,8 +748,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case1_m15.bin",
-      "bytes": 1562756,
-      "sha256": "3b0493796044d4ee4badd154536902b2821d6d157950a03f0cfb9c4620956e15"
+      "bytes": 1611068,
+      "sha256": "ad0e3ec55e5e8e40a6ddbf3ae3e72d49340a3881bd64957b124877d5c41eb1b5"
     },
     {
       "path": "viewer/meshes/tooth11_case1_m16.bin",
@@ -844,12 +759,12 @@
     {
       "path": "viewer/meshes/tooth11_case1_m17.bin",
       "bytes": 388852,
-      "sha256": "d04781d6803d774ab63136a27761ce720766343d95909253f1d0a8f30d6391b1"
+      "sha256": "a828aa98be964b6a61757b800e99e161134a1942372701f665506f28cfead887"
     },
     {
       "path": "viewer/meshes/tooth11_case1_m18.bin",
       "bytes": 267492,
-      "sha256": "aba722a718a6ca86e940f371dde1e2d5edab85078ff707fc2688d2b702d5e236"
+      "sha256": "27fac65c650a64cce5f84f1d255176d05703f6886e64f0cb8a568da6d2f54103"
     },
     {
       "path": "viewer/meshes/tooth11_case1_m19.bin",
@@ -858,13 +773,13 @@
     },
     {
       "path": "viewer/meshes/tooth11_case1_m20.bin",
-      "bytes": 388228,
-      "sha256": "8aa7a83c73e86dee458472c08003efeef762598e19f7c75df2429d134232278c"
+      "bytes": 401080,
+      "sha256": "d30e16f59e7b9f17b2e819b7417475f45c466890ae4cacd4523bd793e1a29038"
     },
     {
       "path": "viewer/meshes/tooth11_case1_m21.bin",
-      "bytes": 84964,
-      "sha256": "4e9f4582c42fbf1f4eb0ebe2d897cca0c37e661e5ff10b5ebafeb7af9559bbc8"
+      "bytes": 84760,
+      "sha256": "cdf1d02636f8c716fdc80b2940b8e12114710adcdef1141bc243c0be6bef28ec"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m01.bin",
@@ -884,12 +799,12 @@
     {
       "path": "viewer/meshes/tooth11_case2_m04.bin",
       "bytes": 4711468,
-      "sha256": "e4f1bdb4f86afad93b4370ca1775e9df25eeeb64353c358d22233bb52a86d878"
+      "sha256": "9a23544c1f55c9fdc5df0733a07faef650d40fa21aa7e8ff76beb9d8d59a9d9c"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m05.bin",
       "bytes": 4711468,
-      "sha256": "8fd8f132508cbac936e4256fdd5a4f8787e23e5912a082de5611e584fd413ebb"
+      "sha256": "07ef0e05b2ff1f3cfd9dc2142ec961ffafc83b8a82efd3c543f0497700afbd5c"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m06.bin",
@@ -898,28 +813,28 @@
     },
     {
       "path": "viewer/meshes/tooth11_case2_m07.bin",
-      "bytes": 281348,
-      "sha256": "eaff427b0591b130ad4896f3822761e96f456b932f0ea4adbccdd2d754277630"
+      "bytes": 277524,
+      "sha256": "ff1a388aaf3b00b51f3477db40fdb2ae1131d1e5505b886194a938519ee5c309"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m08.bin",
-      "bytes": 281348,
-      "sha256": "eaff427b0591b130ad4896f3822761e96f456b932f0ea4adbccdd2d754277630"
+      "bytes": 277524,
+      "sha256": "ff1a388aaf3b00b51f3477db40fdb2ae1131d1e5505b886194a938519ee5c309"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m09.bin",
-      "bytes": 1193156,
-      "sha256": "908aae1bc5a0b0e6825484a4c19244f5ebb46323bdfd4be08c89567fa5f19b41"
+      "bytes": 1172564,
+      "sha256": "018d4e31bd73364d52a7256556d7a0bc925dd71a843188a06bf7f0d73a7f2caa"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m10.bin",
-      "bytes": 1193156,
-      "sha256": "908aae1bc5a0b0e6825484a4c19244f5ebb46323bdfd4be08c89567fa5f19b41"
+      "bytes": 1172564,
+      "sha256": "018d4e31bd73364d52a7256556d7a0bc925dd71a843188a06bf7f0d73a7f2caa"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m11.bin",
-      "bytes": 298516,
-      "sha256": "4df57744eb5419d397a813cdfcfe93de98b0b6c718517dc1252a42e9e78bc91c"
+      "bytes": 293884,
+      "sha256": "8137d5338e1623e38685f95d06fd213600f479abc2261778ea28098bcc6dc68c"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m12.bin",
@@ -928,8 +843,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case2_m13.bin",
-      "bytes": 1193156,
-      "sha256": "8f9eab7755912cfcf18039218a79ac84bd618a2a7b68784f5783056930180633"
+      "bytes": 1172564,
+      "sha256": "a73c8ba36d7d7206d30381ecec71641028f54f3f18ad3ae6810af3dd3de59a59"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m14.bin",
@@ -938,8 +853,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case2_m15.bin",
-      "bytes": 1193156,
-      "sha256": "2ad6e9886719311814f90268320575a5657938eb4ad2e6ad5876c196faada8af"
+      "bytes": 1172564,
+      "sha256": "1037024b5ef3728fb94b754028041b953fb01099dab6a13e5e7dd43e295475e9"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m16.bin",
@@ -949,12 +864,12 @@
     {
       "path": "viewer/meshes/tooth11_case2_m17.bin",
       "bytes": 388852,
-      "sha256": "6ac05e3835c0d4a7f18241a11b797fef19614a0fe9a01375b299038f1cf64a63"
+      "sha256": "e965098cc2277afae432d07ee2f6cee12c72a4f65b31f9a5ebd766e0d34d87b3"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m18.bin",
       "bytes": 267492,
-      "sha256": "bd3ad6dcf06e644d8f9b639e6359c427451bfa82ea1c303ccba3790fa9aaeb2c"
+      "sha256": "0dc9f93b1475b63b51c9f2ecbc3ec659220bd8ca6e38c76db73acad36b3c5874"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m19.bin",
@@ -963,13 +878,13 @@
     },
     {
       "path": "viewer/meshes/tooth11_case2_m20.bin",
-      "bytes": 297736,
-      "sha256": "eb4b3fdedbcee8f55a23cc8bd916a4c04f6269879400eac05543b687af536977"
+      "bytes": 293156,
+      "sha256": "1f5e89760159d232330a9b74e02bcbae68866245669851145697209a74addd1e"
     },
     {
       "path": "viewer/meshes/tooth11_case2_m21.bin",
-      "bytes": 72448,
-      "sha256": "887caec409f10a532e4772024865dbf7e0469adf0ee71749c138631c0ad1d49f"
+      "bytes": 70860,
+      "sha256": "7feafa6e21dfc78ef97b0acb0825d23dff51aa3957616b93bad738393f1d4f42"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m01.bin",
@@ -994,7 +909,7 @@
     {
       "path": "viewer/meshes/tooth11_case3_1_m05.bin",
       "bytes": 6281432,
-      "sha256": "a24d94088084f4b834649d981f908ea7303bad88f5cfa1439c36e0189f74daca"
+      "sha256": "3fcfc315e017cdddf50f47d8fd11831670e62597fb79d51191cd297fa4785ba7"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m06.bin",
@@ -1003,28 +918,28 @@
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m07.bin",
-      "bytes": 325112,
-      "sha256": "810a35022d93524a67ef53d512626a279be579b03f65f5efea9c49b14e7be4f7"
+      "bytes": 319236,
+      "sha256": "a337ff935622875a122ef0c9088da1f79bf8d2284cae99ab54162fce73feebf2"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m08.bin",
-      "bytes": 325112,
-      "sha256": "810a35022d93524a67ef53d512626a279be579b03f65f5efea9c49b14e7be4f7"
+      "bytes": 319236,
+      "sha256": "a337ff935622875a122ef0c9088da1f79bf8d2284cae99ab54162fce73feebf2"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m09.bin",
-      "bytes": 1531604,
-      "sha256": "d0d489aec6d93569de2c55d6f3722a1ff808a0abb4af3b70d50b21506a697eec"
+      "bytes": 1496888,
+      "sha256": "6cc7eec2a748150d2619b572206fdd8aa1a968a92c36a315f363cad452d35647"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m10.bin",
-      "bytes": 1531604,
-      "sha256": "d0d489aec6d93569de2c55d6f3722a1ff808a0abb4af3b70d50b21506a697eec"
+      "bytes": 1496888,
+      "sha256": "6cc7eec2a748150d2619b572206fdd8aa1a968a92c36a315f363cad452d35647"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m11.bin",
-      "bytes": 381684,
-      "sha256": "d77ca9811085223b8503250c8fcd021de2b57597ae7d9b4582941acf85438602"
+      "bytes": 372568,
+      "sha256": "985006dd295042afe107d86539afcd8c39e32b013d4cd620d25aaa2aafe1040c"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m12.bin",
@@ -1033,8 +948,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m13.bin",
-      "bytes": 1531604,
-      "sha256": "259d1cb1994acdb1f0be4bd11a711c475370f151e624b7847e9763986f71281b"
+      "bytes": 1496888,
+      "sha256": "02b48cef523e79e578115e8dca60a0d2b24ebd8a31831914c94e5ad5cea7e1cc"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m14.bin",
@@ -1043,8 +958,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m15.bin",
-      "bytes": 1531604,
-      "sha256": "ef8755cc9a1cc77d4b49ceb844dd4d721622519522cfa7e2daa27ed80c1d1300"
+      "bytes": 1496888,
+      "sha256": "dc70451a24001fa5659a8edb9844caa620a0d6ca2bb1d889b22c58036812f839"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m16.bin",
@@ -1054,12 +969,12 @@
     {
       "path": "viewer/meshes/tooth11_case3_1_m17.bin",
       "bytes": 388852,
-      "sha256": "0a619f78175de133a55b96b4d882593e5753cb20d4faa3e0be502df774d1da84"
+      "sha256": "d8471f265510b45b867f76db4a32a1cf794e4e0fb5ce904952db15d81eb4c301"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m18.bin",
       "bytes": 267492,
-      "sha256": "841209d00ba59d440272ffc60e63481c71939c896968a370677025a70fcfd5d5"
+      "sha256": "93a4939a4366fb483af9d111cd1cf2c5795c19a031387037d574ffddc8a0134d"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m19.bin",
@@ -1068,13 +983,13 @@
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m20.bin",
-      "bytes": 380284,
-      "sha256": "2849a0278f77672ccdee28ba402d37d7fabd7202c61daf25f620a615f59ea671"
+      "bytes": 371756,
+      "sha256": "427083bbf4ac4e5fb78c796daf1a2363c95d900f909406df8f6849556287f993"
     },
     {
       "path": "viewer/meshes/tooth11_case3_1_m21.bin",
-      "bytes": 89056,
-      "sha256": "626d953d5cee60a92bf5dfeb520757d76caf527cad49963880d4a989bdab5693"
+      "bytes": 88624,
+      "sha256": "6fa9b4b63e0efae85cf470b5c66c6833d29141ad24a861362891ed7574888d82"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m01.bin",
@@ -1099,7 +1014,7 @@
     {
       "path": "viewer/meshes/tooth11_case3_m05.bin",
       "bytes": 3423156,
-      "sha256": "2c1112e2a8984d0e45d00edaef27ba4f2df2fbb8d5bd8f2f9d3d444309148d80"
+      "sha256": "7198473da73cb6e4deeccfeaac9c9d8a51f650f8dadb41fa79c0e55ce7117b4d"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m06.bin",
@@ -1108,28 +1023,28 @@
     },
     {
       "path": "viewer/meshes/tooth11_case3_m07.bin",
-      "bytes": 330316,
-      "sha256": "c19e40cdf2c6bc2c2f3786ff5817631005f6978db7500a08232d7a84b75b52e8"
+      "bytes": 313640,
+      "sha256": "5ca85f85060a7f1c3e8edb196650713b5154aa01d77b7de35e975a2d54a88db5"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m08.bin",
-      "bytes": 330316,
-      "sha256": "c19e40cdf2c6bc2c2f3786ff5817631005f6978db7500a08232d7a84b75b52e8"
+      "bytes": 313640,
+      "sha256": "5ca85f85060a7f1c3e8edb196650713b5154aa01d77b7de35e975a2d54a88db5"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m09.bin",
-      "bytes": 1538072,
-      "sha256": "e808dcf8771e4b0c74f517b35fd77b6c26ba4413aa498e444ea2de8fe707b383"
+      "bytes": 1476164,
+      "sha256": "d7f9b5a400d0352ad9f8fc705c32ee260fc3708da0f716ae989960b62616ba52"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m10.bin",
-      "bytes": 1538072,
-      "sha256": "e808dcf8771e4b0c74f517b35fd77b6c26ba4413aa498e444ea2de8fe707b383"
+      "bytes": 1476164,
+      "sha256": "d7f9b5a400d0352ad9f8fc705c32ee260fc3708da0f716ae989960b62616ba52"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m11.bin",
-      "bytes": 385112,
-      "sha256": "cfa84559fedacd2e85745a9aade1e87b915400d93de89169d2b94077b360a0c5"
+      "bytes": 369044,
+      "sha256": "60de1cee67599ff91f9c3962061585bad6d2acd8f975d0224a5e956fc24e9416"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m12.bin",
@@ -1138,8 +1053,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case3_m13.bin",
-      "bytes": 1538072,
-      "sha256": "a5062de9ba7cefc75be7d1a38771ea26d7087a474999c62df64f066fdf8ea275"
+      "bytes": 1476164,
+      "sha256": "7903c5e660346ae20e49ea6ccfa44bf684c4e0a8ac529ed0ab2af2e6a05982ed"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m14.bin",
@@ -1148,8 +1063,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case3_m15.bin",
-      "bytes": 1538072,
-      "sha256": "01a94cd915fac5d2940e07ccfc453b6621cc44e059df3a4504a7b7f92edbf2fc"
+      "bytes": 1476164,
+      "sha256": "048c5e87c53401191ddd47bc597ceaf5d54e7f42f375d12a21aa06ae975361ad"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m16.bin",
@@ -1159,12 +1074,12 @@
     {
       "path": "viewer/meshes/tooth11_case3_m17.bin",
       "bytes": 388852,
-      "sha256": "41dd7a59b5449bf3e3369d9d27b8933ab25d4a4ee5afbacd01e94614dcb3c337"
+      "sha256": "d68e9464aa2a19ffcd6c44b7b48ce64282b5dcb1535be94314f7ef987b6c37f3"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m18.bin",
       "bytes": 267492,
-      "sha256": "ef7a9c0dedf567e4550e418f1150459da61b9dff26db35419e8ac15735db0a03"
+      "sha256": "dca942a7f47e95a107b879488289e373783ea9e150d16ac9265208d09360b4b8"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m19.bin",
@@ -1173,13 +1088,13 @@
     },
     {
       "path": "viewer/meshes/tooth11_case3_m20.bin",
-      "bytes": 383712,
-      "sha256": "e28311f85282f04ef7702cb1a9fbde81aaa345d1b31a175ba69827bf1d97fec5"
+      "bytes": 367996,
+      "sha256": "fef8cb3d7de712923af51acb421c7a97598df4127640a93c3fabc5641317c5f7"
     },
     {
       "path": "viewer/meshes/tooth11_case3_m21.bin",
-      "bytes": 93072,
-      "sha256": "feddbd2084e027c145cd3a519989c41d2f4343f315abb7762af28defd59f25ab"
+      "bytes": 93596,
+      "sha256": "8e970a1591a3292ece6d928188e35ca758dff0af3679618d9d4ab620753ca66b"
     },
     {
       "path": "viewer/meshes/tooth11_case4_1_m01.bin",
@@ -1199,7 +1114,7 @@
     {
       "path": "viewer/meshes/tooth11_case4_1_m04.bin",
       "bytes": 4615592,
-      "sha256": "249f5d26189873836b02f25d3d537179f32dc32917918b0dffa82f019201f97e"
+      "sha256": "b7cb992e99e17f049705259d908456d9056659133d42d210ab0a5c33c0be954e"
     },
     {
       "path": "viewer/meshes/tooth11_case4_1_m05.bin",
@@ -1224,12 +1139,12 @@
     {
       "path": "viewer/meshes/tooth11_case4_1_m09.bin",
       "bytes": 1401188,
-      "sha256": "40c080ae4ab0ded1327d35d6019c7f1637ed5f0687e507956db03c79b3d6d341"
+      "sha256": "99bbd602ed544ee8a481e633a462e3afb721b5ca663d218974a2e64c9e79eaab"
     },
     {
       "path": "viewer/meshes/tooth11_case4_1_m10.bin",
       "bytes": 1401188,
-      "sha256": "40c080ae4ab0ded1327d35d6019c7f1637ed5f0687e507956db03c79b3d6d341"
+      "sha256": "99bbd602ed544ee8a481e633a462e3afb721b5ca663d218974a2e64c9e79eaab"
     },
     {
       "path": "viewer/meshes/tooth11_case4_1_m11.bin",
@@ -1264,12 +1179,12 @@
     {
       "path": "viewer/meshes/tooth11_case4_1_m17.bin",
       "bytes": 388852,
-      "sha256": "3c2812f8bfd862693b143fbf21f0cb97c7a0c6f628454e68464c66de592ee8ed"
+      "sha256": "3e7c51548edb3c76630043e7ad57cfd41f292dfe63fede643f4fb7d43764adcc"
     },
     {
       "path": "viewer/meshes/tooth11_case4_1_m18.bin",
       "bytes": 267492,
-      "sha256": "6f3462166a6b6bd3bae10a0e1f50b3e4c022456c44a3ed94cf28e296ff73bc78"
+      "sha256": "79dc0c64c79591d9163183a4e542fa7f1880506832e8dd345fe5e36babda2be5"
     },
     {
       "path": "viewer/meshes/tooth11_case4_1_m19.bin",
@@ -1309,7 +1224,7 @@
     {
       "path": "viewer/meshes/tooth11_case4_m05.bin",
       "bytes": 4269448,
-      "sha256": "ebe54adda205f683716cd3f9ef7b95e18edbd14b8a21443e21e8e1d23f8f0776"
+      "sha256": "99f43f1d703e3ef459fa918e60492cc57ad4f35cc99109f567489db56cff41bf"
     },
     {
       "path": "viewer/meshes/tooth11_case4_m06.bin",
@@ -1318,28 +1233,28 @@
     },
     {
       "path": "viewer/meshes/tooth11_case4_m07.bin",
-      "bytes": 281068,
-      "sha256": "d528de1a530f735ff3ad65a62d6ac50d8dc9610b7d411a8b0a7cdaa9df895c58"
+      "bytes": 281208,
+      "sha256": "afe90cc60fc50669328d70c013e07bc149c2fae864516d419e70d7572195f7c2"
     },
     {
       "path": "viewer/meshes/tooth11_case4_m08.bin",
-      "bytes": 281068,
-      "sha256": "d528de1a530f735ff3ad65a62d6ac50d8dc9610b7d411a8b0a7cdaa9df895c58"
+      "bytes": 281208,
+      "sha256": "afe90cc60fc50669328d70c013e07bc149c2fae864516d419e70d7572195f7c2"
     },
     {
       "path": "viewer/meshes/tooth11_case4_m09.bin",
-      "bytes": 1273280,
-      "sha256": "e4a420478e735ecb9f67ad59b431f84976f4e994cf9a63015f67138301da69c5"
+      "bytes": 1276580,
+      "sha256": "401aa71af9d7f27c48f7d15ea652d45fe203f3e07f908ce4a89683e928c86185"
     },
     {
       "path": "viewer/meshes/tooth11_case4_m10.bin",
-      "bytes": 1273280,
-      "sha256": "e4a420478e735ecb9f67ad59b431f84976f4e994cf9a63015f67138301da69c5"
+      "bytes": 1276580,
+      "sha256": "401aa71af9d7f27c48f7d15ea652d45fe203f3e07f908ce4a89683e928c86185"
     },
     {
       "path": "viewer/meshes/tooth11_case4_m11.bin",
-      "bytes": 320268,
-      "sha256": "4300f28d6d9b5a80052b4d614fb7db6a99b26e66ef810edf24d9fb2add615046"
+      "bytes": 321180,
+      "sha256": "1eb08406ccbb8dcf95c1700b4add7f3779ee60176449aa18a75996f1bfe81252"
     },
     {
       "path": "viewer/meshes/tooth11_case4_m12.bin",
@@ -1348,8 +1263,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case4_m13.bin",
-      "bytes": 1273280,
-      "sha256": "d2f88f1de7f2fd9b23007a36115499700f0c2d806f9cdb424a07797ffa644ba0"
+      "bytes": 1276580,
+      "sha256": "5ac6a34a7aab47888bc6137ded08d34181695a150763dacc8510b45b736dd286"
     },
     {
       "path": "viewer/meshes/tooth11_case4_m14.bin",
@@ -1358,8 +1273,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case4_m15.bin",
-      "bytes": 1273280,
-      "sha256": "f1e870dc086510cd818ae4e301bfac51db3a44994097eff51995f1000f864efc"
+      "bytes": 1276580,
+      "sha256": "2ea5c73296f2b303bdfb139b546cac854743d4b9a3e49a0baaa9679aabaf74df"
     },
     {
       "path": "viewer/meshes/tooth11_case4_m16.bin",
@@ -1369,12 +1284,12 @@
     {
       "path": "viewer/meshes/tooth11_case4_m17.bin",
       "bytes": 388852,
-      "sha256": "dff34693be7264e7a438029560b41d00f989a12844ed9869c4b2e4e064c1f086"
+      "sha256": "015570b11315f34b1c5e50396ea6e5c45a40d551c108b91d07f5211f727d5124"
     },
     {
       "path": "viewer/meshes/tooth11_case4_m18.bin",
       "bytes": 267492,
-      "sha256": "eaa76a3935ee06a606305c4f3f4a37783ad2ceabebb3961d11db03e98d9d706b"
+      "sha256": "4483f00f597cff89f6399210aacf44f58b02d61e2c4c6891f15b24a0cdf1cb9d"
     },
     {
       "path": "viewer/meshes/tooth11_case4_m19.bin",
@@ -1383,13 +1298,13 @@
     },
     {
       "path": "viewer/meshes/tooth11_case4_m20.bin",
-      "bytes": 319228,
-      "sha256": "b1e9e7de7ecef11774b787418df4e03419c6c55efbb8cecd11290906e9274ffe"
+      "bytes": 319880,
+      "sha256": "451ecd5d77680dedcf2289cad997d638d9466be613ced06810da335049974744"
     },
     {
       "path": "viewer/meshes/tooth11_case4_m21.bin",
-      "bytes": 74516,
-      "sha256": "d010751fa37689137f518af86d66c8bba0cc556b9f5f0772d7ea4c4c98277db1"
+      "bytes": 74932,
+      "sha256": "7c455d0cd8b55f9af1ddca6a900906499b965c095548d145f03c42be430ed2b0"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m01.bin",
@@ -1414,7 +1329,7 @@
     {
       "path": "viewer/meshes/tooth11_case5_m05.bin",
       "bytes": 3426908,
-      "sha256": "07f3ad153525b0ab30746dd485a45d450406ffdfb626caa9c45f954ccb5f8664"
+      "sha256": "f6c8479776cbc9ccfc18493e3ac27be0a94845a73acff05a8e60a6bb4f53c8da"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m06.bin",
@@ -1423,28 +1338,28 @@
     },
     {
       "path": "viewer/meshes/tooth11_case5_m07.bin",
-      "bytes": 421644,
-      "sha256": "571e6cfc74b71b76556978d0fdd6ecc5b98a5c2234dfb1bcaf8e0cfabb6c7880"
+      "bytes": 402060,
+      "sha256": "5291c50b636f2b15b240d160efb3f95fe500296e23b16d109e23136b09b8f77b"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m08.bin",
-      "bytes": 421644,
-      "sha256": "571e6cfc74b71b76556978d0fdd6ecc5b98a5c2234dfb1bcaf8e0cfabb6c7880"
+      "bytes": 402060,
+      "sha256": "5291c50b636f2b15b240d160efb3f95fe500296e23b16d109e23136b09b8f77b"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m09.bin",
-      "bytes": 1739108,
-      "sha256": "1568f96657b69d60baa4a6a590db620d30e7aa024960140852711dd48132d586"
+      "bytes": 1704392,
+      "sha256": "e830bf865fff02843bbc2910f1051ace0cd5ef92acf7bc0829d96e81072348bf"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m10.bin",
-      "bytes": 1739108,
-      "sha256": "1568f96657b69d60baa4a6a590db620d30e7aa024960140852711dd48132d586"
+      "bytes": 1704392,
+      "sha256": "e830bf865fff02843bbc2910f1051ace0cd5ef92acf7bc0829d96e81072348bf"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m11.bin",
-      "bytes": 433988,
-      "sha256": "65a0e59fcba6e01f9b4442c58ac3761e3367bdcf5b58604f3a99d4acca8e0102"
+      "bytes": 425432,
+      "sha256": "ea38ca629765f001e27e7846a233dae5c4743bc6aaf7339cf41c23ac0872a24d"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m12.bin",
@@ -1453,8 +1368,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case5_m13.bin",
-      "bytes": 1739108,
-      "sha256": "4e659a8c7afc10308c35809fb036fcfe5a223a526fa834ecd9f064d013bbb27a"
+      "bytes": 1704392,
+      "sha256": "dadc853dc5d731ad7fffd6ddda2062f9d4b5d2d30341abd2d2c052431d64d46c"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m14.bin",
@@ -1463,8 +1378,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case5_m15.bin",
-      "bytes": 1739108,
-      "sha256": "1870b06c5f97a414f792b3b4f834bd813c31e7a5bfc9e1b5d4dfec65cee94511"
+      "bytes": 1704392,
+      "sha256": "762259e45a7aeb280db554602a9a0c4918ddf6a3121fddafe21d6c73b9cf083c"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m16.bin",
@@ -1474,12 +1389,12 @@
     {
       "path": "viewer/meshes/tooth11_case5_m17.bin",
       "bytes": 388852,
-      "sha256": "470c541571850c1e272446aecf90f25d0b2dc317780a9ef4589fa5b91f28f6eb"
+      "sha256": "e02bd938c3ed7495cd7d2d13bce3963618847d6032209644f5cf5a405aeb9e0a"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m18.bin",
       "bytes": 267492,
-      "sha256": "b42fff25f1f7b2172878e231ee1dcfdfdbd9a2dc154d8c64112c784c88547774"
+      "sha256": "0ec3de3cf9bab305e83b430fddde8546ae7e1f14d90a6ccc4021d60486cdd2ad"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m19.bin",
@@ -1488,13 +1403,13 @@
     },
     {
       "path": "viewer/meshes/tooth11_case5_m20.bin",
-      "bytes": 432788,
-      "sha256": "6c461dbb487cd07081bcbd44f79e61fa95368a25f4b14c42745a818dd12620b6"
+      "bytes": 423944,
+      "sha256": "c40e10339fe7efc6d6969456c838ac55942007bf23d91c3c8581cceac3de2e35"
     },
     {
       "path": "viewer/meshes/tooth11_case5_m21.bin",
-      "bytes": 92400,
-      "sha256": "f529a68126f0b9bd91df5851bfc6cffbf3b470446fccf5737b4aaaf1d5307b74"
+      "bytes": 91424,
+      "sha256": "fa7d3a0fa39498c5406549f581769a95c3e949e709fc2092cd0748d0f8498ae9"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m01.bin",
@@ -1519,7 +1434,7 @@
     {
       "path": "viewer/meshes/tooth11_case6_m05.bin",
       "bytes": 4248840,
-      "sha256": "de182f8844eca3a19c9f741e85b83ef6c7daca38af1294951d91deeab0e45ae9"
+      "sha256": "3c405b9c0fba1cf8eeb51058be40369b69d323dda58ef5d705f7b906432ce0ef"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m06.bin",
@@ -1528,28 +1443,28 @@
     },
     {
       "path": "viewer/meshes/tooth11_case6_m07.bin",
-      "bytes": 432376,
-      "sha256": "179a8279547164da86222ff99486dd134f4fd71b94dc17e4dbc1078184da6d6d"
+      "bytes": 420240,
+      "sha256": "9bc472c9947df208ac9f0331956185d39a5cfe7f10a90f183b5f9f0442aaac18"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m08.bin",
-      "bytes": 432376,
-      "sha256": "179a8279547164da86222ff99486dd134f4fd71b94dc17e4dbc1078184da6d6d"
+      "bytes": 420240,
+      "sha256": "9bc472c9947df208ac9f0331956185d39a5cfe7f10a90f183b5f9f0442aaac18"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m09.bin",
-      "bytes": 1834808,
-      "sha256": "500b98c4fac68ae43f52c4c6799582b7ce52902599d61b05fd45c90e3e1baa4b"
+      "bytes": 1814348,
+      "sha256": "9760cc813f667ed0ccfde06d006ceda8fe87d3aaf200ffec1981deb2b5d82792"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m10.bin",
-      "bytes": 1834808,
-      "sha256": "500b98c4fac68ae43f52c4c6799582b7ce52902599d61b05fd45c90e3e1baa4b"
+      "bytes": 1814348,
+      "sha256": "9760cc813f667ed0ccfde06d006ceda8fe87d3aaf200ffec1981deb2b5d82792"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m11.bin",
-      "bytes": 455408,
-      "sha256": "390541e2eeed21bfe31f3ab75dd4c6bdb5a471a8edccfc3392ec2b68a1bff894"
+      "bytes": 450828,
+      "sha256": "42b0eff056b4cecae308d95dcb092d6063047e10dddad07babff10cb482e3382"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m12.bin",
@@ -1558,8 +1473,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case6_m13.bin",
-      "bytes": 1834808,
-      "sha256": "2cc1bd7a0c0c04d2e22628b65919aebbc39d1bbb484889e1fa98073572e84bc8"
+      "bytes": 1814348,
+      "sha256": "07b0e21986ee1e6d543d3f4ddbf178b7af911ffa899cbe4fc9043729aff90423"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m14.bin",
@@ -1568,8 +1483,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case6_m15.bin",
-      "bytes": 1834808,
-      "sha256": "c73a1c517ab82cb920dc74b0e3feee75c02699d553710c4dd61c1674b0423713"
+      "bytes": 1814348,
+      "sha256": "1d26b93f5e3bc7d0c3d8aece6e4b78c5aad85f74715816888fdd92c1d06804ce"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m16.bin",
@@ -1579,12 +1494,12 @@
     {
       "path": "viewer/meshes/tooth11_case6_m17.bin",
       "bytes": 388852,
-      "sha256": "9481bd3326802e5814276e81c2aae1fee220647f1e694a87f5676e28ab39ecbc"
+      "sha256": "8816b9aaca9f7bda6b28b0460dbf94a3dd507b28e90caece8c2d32bcd4730b85"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m18.bin",
       "bytes": 267492,
-      "sha256": "016e3ffcf27bc710290eef3474a354bc552efb4d6c82891ecdddcda783644246"
+      "sha256": "382b8d8578ef23e28d5dd5c76e9427a5ef5c60b6bcf55e94b37a43d9dcd27430"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m19.bin",
@@ -1593,13 +1508,13 @@
     },
     {
       "path": "viewer/meshes/tooth11_case6_m20.bin",
-      "bytes": 454240,
-      "sha256": "4c92fa8c2322652b47cec22b60f2585a01ce046a07fd86048e03b8408171d436"
+      "bytes": 449320,
+      "sha256": "12c5f49cf505a4fe7f71e8329b7e83c8b961e5c0bdb349fbd0a2a664c176eb00"
     },
     {
       "path": "viewer/meshes/tooth11_case6_m21.bin",
-      "bytes": 98924,
-      "sha256": "cd073b9bcefc49c126abc0f9b3a171830d48abc9d58ac491b4979d0ec197858b"
+      "bytes": 95100,
+      "sha256": "8239ee5d91b896dca3f5de7721f0e0be4de6b20d0620f8d47a4c6da6faf02d36"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m01.bin",
@@ -1624,7 +1539,7 @@
     {
       "path": "viewer/meshes/tooth11_case7_m05.bin",
       "bytes": 3552912,
-      "sha256": "84d02662499c2c311cdc563440564eddf98a5731077594b88a97fc41bb72752b"
+      "sha256": "4c2bd264c2521298990599acf20c44dacf95e0e57f0949580f32bf060ec84152"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m06.bin",
@@ -1633,28 +1548,28 @@
     },
     {
       "path": "viewer/meshes/tooth11_case7_m07.bin",
-      "bytes": 404512,
-      "sha256": "09f6b02fc0fc4b58e9a1be07ec88df26fb02ecd4e321ba4976a21986389cd28a"
+      "bytes": 398972,
+      "sha256": "389803f7a98e8212066c9cb0a172c73b24f7c2d385632c8e159ecd3ff2e7bafa"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m08.bin",
-      "bytes": 404512,
-      "sha256": "09f6b02fc0fc4b58e9a1be07ec88df26fb02ecd4e321ba4976a21986389cd28a"
+      "bytes": 398972,
+      "sha256": "389803f7a98e8212066c9cb0a172c73b24f7c2d385632c8e159ecd3ff2e7bafa"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m09.bin",
-      "bytes": 1854476,
-      "sha256": "a3e3d3399c1c87cae40eb73b6a0ff90a27e9483f9056f52bd38e13b7839a4b5e"
+      "bytes": 1894604,
+      "sha256": "832efa262137ed86cc031fc9c2f7bd8d5a2b5e0df4c7efad424061bc13cde884"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m10.bin",
-      "bytes": 1854476,
-      "sha256": "a3e3d3399c1c87cae40eb73b6a0ff90a27e9483f9056f52bd38e13b7839a4b5e"
+      "bytes": 1894604,
+      "sha256": "832efa262137ed86cc031fc9c2f7bd8d5a2b5e0df4c7efad424061bc13cde884"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m11.bin",
-      "bytes": 460876,
-      "sha256": "53dbbcc226cb0891864f4713bd8ab9489726f178d0b25c2501bd77ebcf0887de"
+      "bytes": 471644,
+      "sha256": "1e4262b5b7df9f58746393b44767fc68b395ec9fc7a02422d26785bc20179d47"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m12.bin",
@@ -1663,8 +1578,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case7_m13.bin",
-      "bytes": 1854476,
-      "sha256": "d7cd894babe5f7d9c33589074eb061caec08c27d67fff1aab70055b13cc64287"
+      "bytes": 1894604,
+      "sha256": "5fc05617bf70d8c2e13b7a7bf44b834f3a9159fce30b09410df04a0aa575aa38"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m14.bin",
@@ -1673,8 +1588,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_case7_m15.bin",
-      "bytes": 1854476,
-      "sha256": "828f89bf13043ea8a12f9b4f7bc59dfc8b9aa6a6218e38cd099becbf731ee003"
+      "bytes": 1894604,
+      "sha256": "c0d3e715e0d46c4a74e6d45287f98e21e948cd4dd8f62d65d85c4cb2721fa68e"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m16.bin",
@@ -1684,12 +1599,12 @@
     {
       "path": "viewer/meshes/tooth11_case7_m17.bin",
       "bytes": 388852,
-      "sha256": "beec30ee74d31f43c8e9dcc9b39be304ff8511c6e85b5febf9092e4b6e3b6a28"
+      "sha256": "ffeea5899128593a0acbfb9b60e7523234706ea159b83bf37c7bd0ea9c7df98e"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m18.bin",
       "bytes": 267492,
-      "sha256": "1092a23095242f3733785f4106ef9f97ccfe7d4fe65afb6b48fe503a7796781e"
+      "sha256": "4e916dbf16da7904766026c1a9fb2326d2ba4a255b03d02ac3637f1ae8c6a6da"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m19.bin",
@@ -1698,13 +1613,13 @@
     },
     {
       "path": "viewer/meshes/tooth11_case7_m20.bin",
-      "bytes": 460096,
-      "sha256": "90c9999b84c3030001c833adb2cff530317d1bd76fe1cdb53b3d274d355f4ac6"
+      "bytes": 470488,
+      "sha256": "cf18d533f8acc6bcfa3eafd7664a33c60f57fccb3d31778e2c023fff05c40e93"
     },
     {
       "path": "viewer/meshes/tooth11_case7_m21.bin",
-      "bytes": 89092,
-      "sha256": "16038423d79a530b72ce539e575e09c62e8b25844c6dfe9b5f1550a647327b1c"
+      "bytes": 87412,
+      "sha256": "b5ff4413f26edb3bf344a6d662540f6482c4407d92010fb6a3403cc19d7e9368"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m01.bin",
@@ -1729,7 +1644,7 @@
     {
       "path": "viewer/meshes/tooth11_test1_m05.bin",
       "bytes": 3429480,
-      "sha256": "32c458df75594b11ee0a3317f8cd7d390626076c9b750d2f9d7449e711758d18"
+      "sha256": "3870653a2ff3d079146961009805ed8289cde6c33b310babdd5312415fdaabb4"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m06.bin",
@@ -1738,28 +1653,28 @@
     },
     {
       "path": "viewer/meshes/tooth11_test1_m07.bin",
-      "bytes": 283684,
-      "sha256": "ed19f51b7e85bc8a7156076ba872a8819d563331c348d90a65209f7e9a0b3540"
+      "bytes": 283952,
+      "sha256": "5751337c80fce81a6998e73973d7ba8e8340aa1d202d161115d2aeb6b55710c2"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m08.bin",
-      "bytes": 283684,
-      "sha256": "ed19f51b7e85bc8a7156076ba872a8819d563331c348d90a65209f7e9a0b3540"
+      "bytes": 283952,
+      "sha256": "5751337c80fce81a6998e73973d7ba8e8340aa1d202d161115d2aeb6b55710c2"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m09.bin",
-      "bytes": 1157516,
-      "sha256": "38256fa0f27fadf711056f8c82a3354e4ce65332a3230ff52516efc798eab462"
+      "bytes": 1152368,
+      "sha256": "a85003def132313eb6eb3691105de970cca88f5b61d9ff1aa8e6c13c41b01b9f"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m10.bin",
-      "bytes": 1157516,
-      "sha256": "38256fa0f27fadf711056f8c82a3354e4ce65332a3230ff52516efc798eab462"
+      "bytes": 1152368,
+      "sha256": "a85003def132313eb6eb3691105de970cca88f5b61d9ff1aa8e6c13c41b01b9f"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m11.bin",
-      "bytes": 289356,
-      "sha256": "eb90887db61705de74c5952996e0c2a2dcf0591232a23ddce6a2be9c9fc20a70"
+      "bytes": 288048,
+      "sha256": "ca3121c1648f819e15078b2ce425dd9f33b18922c0e8d99cfed5b87cec97bd1d"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m12.bin",
@@ -1768,8 +1683,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_test1_m13.bin",
-      "bytes": 1157516,
-      "sha256": "fd9849757b032d3d977f03e534c5cb86c9905b07e27fe42d2397ed8d2d2cbc8d"
+      "bytes": 1152368,
+      "sha256": "93b3726bd555222bb690bf0b761e4b68297245724454b63206bf736ed0674f6f"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m14.bin",
@@ -1778,8 +1693,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_test1_m15.bin",
-      "bytes": 1157516,
-      "sha256": "5ced552077e273051f8cb03fb5f29d470312c2954ab4c3592f6bec7f827c2173"
+      "bytes": 1152368,
+      "sha256": "5cb9e6ecb90b8a601af8ca7c7dfb4222751e4a59ea4a69ec8a47afa825ac37b5"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m16.bin",
@@ -1789,12 +1704,12 @@
     {
       "path": "viewer/meshes/tooth11_test1_m17.bin",
       "bytes": 388852,
-      "sha256": "125e1cff45cad3919f277d18bddcb3a09a19472f598a81ed7a4bde5ba8abd22d"
+      "sha256": "4171e9f7f7da9f0926ca638f535164cd045726b959899b000b15b73a275f541b"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m18.bin",
       "bytes": 267492,
-      "sha256": "599c294d4fa6f91d45036e5d280f99e0d6092dc85826cccab07a60fbd19b5c85"
+      "sha256": "73a1738be2934335be0856d9efd21b50050b63a5f36454f67f6c909a1bff7497"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m19.bin",
@@ -1803,13 +1718,13 @@
     },
     {
       "path": "viewer/meshes/tooth11_test1_m20.bin",
-      "bytes": 288948,
-      "sha256": "e2145a63fb0036ce60c056650b834e01969e5aef898e82e7a2276c8a74c456dc"
+      "bytes": 287636,
+      "sha256": "19bf897976b4c5a6b3a162b173dd3ca1938f2553907917c86639c29a122b35fd"
     },
     {
       "path": "viewer/meshes/tooth11_test1_m21.bin",
-      "bytes": 77740,
-      "sha256": "9232d9dd4b2ab2392988d309a4c5117994db5348902953f56cd67301e75ad21f"
+      "bytes": 76308,
+      "sha256": "155a62fa79ad5a1f59ef46a690dc65bc6163ffebc79127a4d3c638bf024f839c"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m01.bin",
@@ -1834,7 +1749,7 @@
     {
       "path": "viewer/meshes/tooth11_test2_m05.bin",
       "bytes": 2982144,
-      "sha256": "df1640244ac4e13fddc7ee7b5967a17f104de6eb4ac7a32643bfa9a3d10d1c47"
+      "sha256": "d8dea4a1d996d50900e7909484abd7e4bb92d1a2cab271bb2e08c5e977cf8cf8"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m06.bin",
@@ -1843,28 +1758,28 @@
     },
     {
       "path": "viewer/meshes/tooth11_test2_m07.bin",
-      "bytes": 268924,
-      "sha256": "96522af09e8973cf9943fceb5b2c8b012151b11360f62eabbc250366487b1407"
+      "bytes": 269388,
+      "sha256": "1d482b02f304cfac7640c157b833554773bdbbdc568bc3f06002fbbcacb67eb6"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m08.bin",
-      "bytes": 268924,
-      "sha256": "96522af09e8973cf9943fceb5b2c8b012151b11360f62eabbc250366487b1407"
+      "bytes": 269388,
+      "sha256": "1d482b02f304cfac7640c157b833554773bdbbdc568bc3f06002fbbcacb67eb6"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m09.bin",
-      "bytes": 1288988,
-      "sha256": "48ea5893a06fd2698e1a1d65625b0d6f42ad9f5fdb60059e416ea19f3502f2d4"
+      "bytes": 1283312,
+      "sha256": "6464dd95a0d5340bc0dccdf8f69837db7cd52f2b8d903dbbde7fefcb4b302f93"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m10.bin",
-      "bytes": 1288988,
-      "sha256": "48ea5893a06fd2698e1a1d65625b0d6f42ad9f5fdb60059e416ea19f3502f2d4"
+      "bytes": 1283312,
+      "sha256": "6464dd95a0d5340bc0dccdf8f69837db7cd52f2b8d903dbbde7fefcb4b302f93"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m11.bin",
-      "bytes": 319508,
-      "sha256": "6b1018dd13097ab522eeab179d30ce21ea63b4df628a080c3074296c40d8c9ab"
+      "bytes": 318152,
+      "sha256": "907c89a09ab55e925fe28607a83d65c77d7f19086f133f08ff8b7606b17a31a7"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m12.bin",
@@ -1873,8 +1788,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_test2_m13.bin",
-      "bytes": 1288988,
-      "sha256": "91bd58abb5e17dd8f9726c1e9559c970a04e0e82ca472de02adb88a88aeeee2e"
+      "bytes": 1283312,
+      "sha256": "2e218f79667058d41f10ce87af4c5baf0e4a95ebe0c04fc462eb7dc5680349d5"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m14.bin",
@@ -1883,8 +1798,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_test2_m15.bin",
-      "bytes": 1288988,
-      "sha256": "a21d699e4918545312c37a3678192e20d23dbb83f6f341cd44f89a7a5dc82f81"
+      "bytes": 1283312,
+      "sha256": "24027a6183d9572024a8cb1d01d7d2a4c4cb52fc5c8ebe498d500103edba0eaa"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m16.bin",
@@ -1894,12 +1809,12 @@
     {
       "path": "viewer/meshes/tooth11_test2_m17.bin",
       "bytes": 388852,
-      "sha256": "97a39ea6ed363eca426c96151cbcde920db733d0c6c434f66a9bf8e9c3351c1b"
+      "sha256": "27a98337ddc194ac3e128c9f5cce76c67f5e0680909c4b0f1a72f463fd6f49cb"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m18.bin",
       "bytes": 267492,
-      "sha256": "f358feb2bc031d4e690fdfc269d8ca8a106593bc8292203af2f60edb689a5890"
+      "sha256": "cec07eea6d8af7033838d06bfbc8ad32197781ddb84ae46d108dc53ebc5365ba"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m19.bin",
@@ -1908,13 +1823,13 @@
     },
     {
       "path": "viewer/meshes/tooth11_test2_m20.bin",
-      "bytes": 318724,
-      "sha256": "7ddb56b16af3f51a6eed255d1d50ed7771801ac73091bba5c0b0a3122fe65744"
+      "bytes": 316636,
+      "sha256": "a491bdbcb48da60e26ac2c0c1531b9a53440b37955e37700022236cf1c216cd0"
     },
     {
       "path": "viewer/meshes/tooth11_test2_m21.bin",
-      "bytes": 77284,
-      "sha256": "9d03da910d8cde7f7fb2c246cb4c83c69075d51d27cf89e8a8ca6bbd0c7244cf"
+      "bytes": 75640,
+      "sha256": "94f4668a9116cbc0ea43294feeed1fbb3234074317c8c5a82d89699a26ca1e3d"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m01.bin",
@@ -1939,7 +1854,7 @@
     {
       "path": "viewer/meshes/tooth11_test3_m05.bin",
       "bytes": 3529580,
-      "sha256": "6086dfb6865fd6bc357be8e26b6be91fbf7d6a2347306ca9ab93ee0549ac3638"
+      "sha256": "9fc09a0421966858dae8ae265da978f51190bb7ec0a1fc099e25786950662a39"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m06.bin",
@@ -1948,28 +1863,28 @@
     },
     {
       "path": "viewer/meshes/tooth11_test3_m07.bin",
-      "bytes": 331724,
-      "sha256": "77dbe2fbcdebb878eb76cf38751325e9b7e3e4042c231de3ac973c79633b2313"
+      "bytes": 318392,
+      "sha256": "59b99b52732d52260f385ca3d7914d193545a35e4a1c6d6ec941cbfe4c2c2496"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m08.bin",
-      "bytes": 331724,
-      "sha256": "77dbe2fbcdebb878eb76cf38751325e9b7e3e4042c231de3ac973c79633b2313"
+      "bytes": 318392,
+      "sha256": "59b99b52732d52260f385ca3d7914d193545a35e4a1c6d6ec941cbfe4c2c2496"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m09.bin",
-      "bytes": 1223648,
-      "sha256": "40fc6f9669b761d9251db60ea573d4f30742dff5577d59c1595ebf15693b594c"
+      "bytes": 1204904,
+      "sha256": "4538bfb5ae1df387a437ab34f9ad2fe7ea7a2923ac330b05eb89fc2124fa7a92"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m10.bin",
-      "bytes": 1223648,
-      "sha256": "40fc6f9669b761d9251db60ea573d4f30742dff5577d59c1595ebf15693b594c"
+      "bytes": 1204904,
+      "sha256": "4538bfb5ae1df387a437ab34f9ad2fe7ea7a2923ac330b05eb89fc2124fa7a92"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m11.bin",
-      "bytes": 306024,
-      "sha256": "5a5fc5d297ceb894b0edf08eac6b3a960acafa9d62c5d09e100579123aaf4ef4"
+      "bytes": 300932,
+      "sha256": "3f6f72a7a769349ed9ada7666b4684f69bddf9836ac415dcf95f7539fad7b788"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m12.bin",
@@ -1978,8 +1893,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_test3_m13.bin",
-      "bytes": 1223648,
-      "sha256": "4cc4ae841b89d979a548909d1ec983225edcae8551cb15935e4c1ffbb389e7e4"
+      "bytes": 1204904,
+      "sha256": "d019a51c90c9767e3fcc532244252e8df2b997a810989de4188bc971ef17028a"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m14.bin",
@@ -1988,8 +1903,8 @@
     },
     {
       "path": "viewer/meshes/tooth11_test3_m15.bin",
-      "bytes": 1223648,
-      "sha256": "acd56a1a1d8c21f59825b15b81ea3b5f0a829db5c03c9ec6bf7e0386ba1e4bbf"
+      "bytes": 1204904,
+      "sha256": "f573a384c53eb717fc03c044d075fe2b260ba92f3e9106d65f3d05e741d9aefe"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m16.bin",
@@ -1999,12 +1914,12 @@
     {
       "path": "viewer/meshes/tooth11_test3_m17.bin",
       "bytes": 388852,
-      "sha256": "366435a79fcf900abbcd678e858f65a7cbc7c48aa468df1d6b2b8b82d67ca66b"
+      "sha256": "66c17898d47603862583d575fa7ce47856a3125c8f9bb39986216f06b45d90aa"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m18.bin",
       "bytes": 267492,
-      "sha256": "9b59c9fd8be78fded20c3fb21d60c6837b40d0b09028324305ac32120ab4907f"
+      "sha256": "9ee21744b13a5e93c3e85e0750ff76c0d0112fe117159fa16cc87fdc66cbc6c2"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m19.bin",
@@ -2013,213 +1928,13 @@
     },
     {
       "path": "viewer/meshes/tooth11_test3_m20.bin",
-      "bytes": 304516,
-      "sha256": "97997041c84b6cefc4cc4cb680fcd802e9ead6da38b12ca9c1869efc3f5a6e65"
+      "bytes": 300256,
+      "sha256": "c09cedd6e2c7f5116737443bc20d54c5e8f9a463ef0c9d9ce48acd7f04706915"
     },
     {
       "path": "viewer/meshes/tooth11_test3_m21.bin",
-      "bytes": 81508,
-      "sha256": "0740f80bfff628369150129bdaf3062e9a839d203012dbd08672db6819c9dfc0"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m01.bin",
-      "bytes": 9958040,
-      "sha256": "7da5e31006eeb1bebddb2e2894d7431b4eca9749e571649325a9710fa884aab0"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m02.bin",
-      "bytes": 3478836,
-      "sha256": "06e43bb99042efd2f55e61c23eb746c23af35d7ecf39ad4479d4014ec0b113ba"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m03.bin",
-      "bytes": 9958040,
-      "sha256": "7da5e31006eeb1bebddb2e2894d7431b4eca9749e571649325a9710fa884aab0"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m04.bin",
-      "bytes": 3478836,
-      "sha256": "6459281b28c65a43aa5b4b9fbc200172cbe1c3cddd306cf7047cfa2070bd37f7"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m05.bin",
-      "bytes": 3478836,
-      "sha256": "2de315c0ee7db16b67b014dd5a701bcbedc8c000e62a593628113ab72b8872fd"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m06.bin",
-      "bytes": 829280,
-      "sha256": "9e3e4619b0c691ff871b472c26ceaaa0a469925fedd56e7ff4096223dd26fff5"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m07.bin",
-      "bytes": 503164,
-      "sha256": "81d9fd394b0de4002d2b38aa558cae7a94a94e75a4fbd482c3816272ec79d59a"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m08.bin",
-      "bytes": 503164,
-      "sha256": "81d9fd394b0de4002d2b38aa558cae7a94a94e75a4fbd482c3816272ec79d59a"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m09.bin",
-      "bytes": 503164,
-      "sha256": "a2b6c049750f886676f4d08b8ee9956c66a81507a661c11b8db4135c8274f099"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m10.bin",
-      "bytes": 503164,
-      "sha256": "a2b6c049750f886676f4d08b8ee9956c66a81507a661c11b8db4135c8274f099"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m11.bin",
-      "bytes": 829280,
-      "sha256": "9e3e4619b0c691ff871b472c26ceaaa0a469925fedd56e7ff4096223dd26fff5"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m12.bin",
-      "bytes": 503164,
-      "sha256": "8c9718cc8121abb5ba2c801394074641bd1870bae7b31680acfc275c6ec6caaf"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m13.bin",
-      "bytes": 829280,
-      "sha256": "9e3e4619b0c691ff871b472c26ceaaa0a469925fedd56e7ff4096223dd26fff5"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m14.bin",
-      "bytes": 503164,
-      "sha256": "55c3c14dd5c149462269b546d88d41b3c65ea8d7ca22debbac9fb8b42a250bce"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m15.bin",
-      "bytes": 829280,
-      "sha256": "9e3e4619b0c691ff871b472c26ceaaa0a469925fedd56e7ff4096223dd26fff5"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m16.bin",
-      "bytes": 223352,
-      "sha256": "88cea1ead386b89b8412832ad527e36e100ed2b8d1a6f6ec1f3624ada5d8a205"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m17.bin",
-      "bytes": 335060,
-      "sha256": "1c3188bfbb783141b0e9250f3d0b4a9292a54b35554697929411217ad1d1a07d"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m18.bin",
-      "bytes": 829280,
-      "sha256": "9e3e4619b0c691ff871b472c26ceaaa0a469925fedd56e7ff4096223dd26fff5"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m19.bin",
-      "bytes": 494988,
-      "sha256": "b68e8e1faeb011105be4875fbe9b49ac8020f96e372ccc76d2f9f24545468513"
-    },
-    {
-      "path": "viewer/meshes/tooth36_case1_m20.bin",
-      "bytes": 113020,
-      "sha256": "6bceaf424d9bb1225066feed851544f2c16b492afc01694eeddae07181ef88d2"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m01.bin",
-      "bytes": 9958040,
-      "sha256": "7da5e31006eeb1bebddb2e2894d7431b4eca9749e571649325a9710fa884aab0"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m02.bin",
-      "bytes": 3872376,
-      "sha256": "972c4d4900b44d6d49c7bc496442064b667252e2f78d3351d1a92e8687f36dff"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m03.bin",
-      "bytes": 9958040,
-      "sha256": "7da5e31006eeb1bebddb2e2894d7431b4eca9749e571649325a9710fa884aab0"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m04.bin",
-      "bytes": 3872376,
-      "sha256": "b2f61354ca51d1e3af439bae5fcad316f132797c46d6bdae51600e823a739585"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m05.bin",
-      "bytes": 3872376,
-      "sha256": "5dabec995420f11ac98347b310b2f394111b4818374470d31a9b19c6cfd24a0d"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m06.bin",
-      "bytes": 805748,
-      "sha256": "ee0b63385e53be292126fabcbc99054ab595a6948de65bd4316a26a3ba0a2336"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m07.bin",
-      "bytes": 313120,
-      "sha256": "34e1fd5c4c2886c476cdebc58f1829704717f0e08f57b5bd376bad29a259a697"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m08.bin",
-      "bytes": 313120,
-      "sha256": "34e1fd5c4c2886c476cdebc58f1829704717f0e08f57b5bd376bad29a259a697"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m09.bin",
-      "bytes": 313120,
-      "sha256": "3c2e94d7f69352ee41ed4a0a1b647a6d76d0c1f7155277287dc53a7b5a75e131"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m10.bin",
-      "bytes": 313120,
-      "sha256": "3c2e94d7f69352ee41ed4a0a1b647a6d76d0c1f7155277287dc53a7b5a75e131"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m11.bin",
-      "bytes": 805748,
-      "sha256": "ee0b63385e53be292126fabcbc99054ab595a6948de65bd4316a26a3ba0a2336"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m12.bin",
-      "bytes": 313120,
-      "sha256": "756688d533cf2aa87d13e15eec30741ebc80e800dfdb96f44c2d15ac80801870"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m13.bin",
-      "bytes": 805748,
-      "sha256": "ee0b63385e53be292126fabcbc99054ab595a6948de65bd4316a26a3ba0a2336"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m14.bin",
-      "bytes": 313120,
-      "sha256": "8ac2ff39750a509c895291892e66ff6033269bd3d1646f7b0a74a7b10883e229"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m15.bin",
-      "bytes": 805748,
-      "sha256": "ee0b63385e53be292126fabcbc99054ab595a6948de65bd4316a26a3ba0a2336"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m16.bin",
-      "bytes": 225216,
-      "sha256": "debf3eeb2bfa1d9448d8fffef2f86bf3a5eb7d640a5ad61d37d0a55c291b9ed6"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m17.bin",
-      "bytes": 310428,
-      "sha256": "f8edbbbff0c09e0bf64872b74fe56572bac5149b992926a67e98bcafea0ec5e0"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m18.bin",
-      "bytes": 805748,
-      "sha256": "ee0b63385e53be292126fabcbc99054ab595a6948de65bd4316a26a3ba0a2336"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m19.bin",
-      "bytes": 305632,
-      "sha256": "2df90966aa221386250a151fa858285f7d40c42b996046b131ead42a6d5c3157"
-    },
-    {
-      "path": "viewer/meshes/tooth46_test1_m20.bin",
-      "bytes": 68052,
-      "sha256": "fa576af0f38650869c4b9d139cf891ad30fc626538099ddc0c3fb07f7e5f4d87"
+      "bytes": 80076,
+      "sha256": "2192fd3637c8f3a3f97f8b3df31f1035edbc0687d556e8ab3eb728d9f48cab69"
     },
     {
       "path": "viewer/neck-refinement.html",
@@ -2278,18 +1993,18 @@
     },
     {
       "path": "viewer/stages.html",
-      "bytes": 6909,
-      "sha256": "5f1d675aecaf4b6fc2ce87afab5842b5c93520ce9281ca8aa556e59fff2bc4ad"
+      "bytes": 10071,
+      "sha256": "25e82b881f325c324764b110aca283f8d27826bf6261be90b8f0ce602ddee1b7"
     },
     {
       "path": "viewer/stages.js",
-      "bytes": 29590,
-      "sha256": "a7dfa3c5e301e82fcfa365c12b2b2fed4423771e1f149f7341fb24e2802311b6"
+      "bytes": 56939,
+      "sha256": "3dfbc821826563675f1222ada17398a276b6d48bec8039ea085116a98c31507a"
     },
     {
       "path": "viewer/stages_manifest.json",
-      "bytes": 512918,
-      "sha256": "0fc860d27651b0c37773dfa6f4794084e47f17041c22417859b57cbca82e84d3"
+      "bytes": 503032,
+      "sha256": "6eb85982dd0f801a31f5f792dec4b118c8a296fe2012c646dd46e23b74a6efcc"
     },
     {
       "path": "viewer/vendor/OrbitControls.js",
