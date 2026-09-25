@@ -289,7 +289,7 @@ function fitSoon(){requestAnimationFrame(()=>{for(const p of panels){if(p.host.c
 function fmtNum(v,digits){return v==null||!Number.isFinite(Number(v))?'—':Number(v).toFixed(digits)}
 function circularAzDist(a,b){return Math.abs(((a-b+540)%360)-180)}
 function nearestShoulderBin(az,bins){if(!bins?.length)return null;let best=null,bestD=Infinity;for(const bin of bins){const d=circularAzDist(az,Number(bin.az));if(d<bestD){bestD=d;best=bin}}return best}
-/** 牙体显示坐标：x=近中、y=唇/颊侧，与 section_azimuth_deg 一致（0=唇侧，+90=近中）。 */
+/** 牙体显示坐标：x=近中、y=唇面，与 section_azimuth_deg 一致（0=唇侧，+90=近中）。 */
 function hitAzimuthDeg(point){return Math.atan2(point.x,point.y)*180/Math.PI}
 function syncMeasurePanel(){
  if(stageId==='step6'){$('measure-panel').classList.add('hidden');return}
@@ -430,7 +430,7 @@ function pickRightMeasure(event){
  pointer.y=-((event.clientY-rect.top)/rect.height)*2+1;
  raycaster.setFromCamera(pointer,right.camera);
  const hits=raycaster.intersectObjects(right.group.children,true).filter(h=>h.object.isMesh);
- if(!hits.length){$('measure-result').textContent='未点到右侧网格，请再点唇/颊侧颈缘附近。';delete $('measure-result').dataset.filled;return}
+ if(!hits.length){$('measure-result').textContent='未点到右侧网格，请再点唇面颈缘附近。';delete $('measure-result').dataset.filled;return}
  const az=hitAzimuthDeg(hits[0].point),bin=nearestShoulderBin(az,bins);
  if(!bin){$('measure-result').textContent='清单里没有可匹配的测量桶。';delete $('measure-result').dataset.filled;clearMeasureBin();return}
  showMeasureHit(az,bin);
