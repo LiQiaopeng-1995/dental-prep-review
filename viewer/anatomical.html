@@ -8,7 +8,7 @@
 <label>显示 <select id="display-mode"><option value="segmented">牙面 + 肩台</option><option value="paired">肩台按对应牙面分色</option><option value="grey">灰色牙体</option><option value="shoulder">肩台高亮</option></select></label>
 <label><input type="checkbox" id="linked" checked>关联边界</label><label><input type="checkbox" id="axes">标注方向</label><label><input type="checkbox" id="back-grey" checked>内侧灰色</label><label><input type="checkbox" id="boundary">颈缘</label><label><input type="checkbox" id="wire">网格线</label></div>
 <div class="panels"><div class="viewport" id="left"><span class="label" id="left-label">R6</span></div><div class="viewport" id="right"><span class="label">本轮约束结果</span></div></div>
-<div class="row" id="views"><button data-view="front">正面</button><button data-view="back">背面</button><button data-view="sideA">侧面 A</button><button data-view="sideB">侧面 B</button><button data-view="top">冠顶</button><button data-view="bottom">颈缘</button><button id="fit">适合窗口</button><span id="status" role="status"></span></div>
+<div class="row" id="views"><button data-view="front">唇面</button><button data-view="back">舌面</button><button data-view="sideA">近中</button><button data-view="sideB">远中</button><button data-view="top">冠顶</button><button data-view="bottom">颈缘</button><button id="fit">适合窗口</button><span id="status" role="status"></span></div>
 <p class="muted">拖动旋转 · 滚轮缩放 · 右键平移；左右视图联动。白色细线为牙面与肩台共用的侧边分界。</p><div id="legend" class="row"></div>
 <div class="metrics" id="metrics"></div><ul id="notes"></ul>
 <h3>逐方向剖线</h3><div class="row"><label>剖切角度 <input id="section-angle" type="range" min="0" max="71" value="0"><span id="angle-value">0°</span></label><label><input id="show-section" type="checkbox" checked>模型上显示剖线</label></div>

@@ -548,7 +548,7 @@ function showStage(id,doFit=true){
  $('images').replaceChildren();for(const img of s.images){const fig=document.createElement('figure'),el=document.createElement('img');el.src=img.url;el.alt=img.caption;el.loading='lazy';const cap=document.createElement('figcaption');cap.textContent=img.caption;fig.append(el,cap);$('images').append(fig)}
  $('legend').replaceChildren();
  const modes=new Set(s.left.concat(s.right).map(k=>C().models[k].mode));
- if(modes.has('label')||isShoulder)for(const [sid,name] of [[1,'切端/咬合面'],[2,'唇/颊侧'],[3,'舌侧'],[4,'近中'],[5,'远中'],[7,'肩台']]){const item=document.createElement('span');item.textContent='● '+name;item.style.color=data.palette[sid];$('legend').append(item)}
+ if(modes.has('label')||isShoulder)for(const [sid,name] of [[1,'切端/咬合面'],[2,'唇面'],[3,'舌面'],[4,'近中'],[5,'远中'],[7,'肩台']]){const item=document.createElement('span');item.textContent='● '+name;item.style.color=data.palette[sid];$('legend').append(item)}
  if(modes.has('instance')){const item=document.createElement('span');item.textContent='● 实例分色';item.style.color='#63b4fa';$('legend').append(item)}
  if(overlay){const item=document.createElement('span');item.textContent='● 备牙前（半透明）';item.style.color='#3d7edb';$('legend').prepend(item)}
  delete $('measure-result').dataset.filled;clear(measureOverlay);syncMeasurePanel();

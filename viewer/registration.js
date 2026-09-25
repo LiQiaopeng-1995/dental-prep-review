@@ -184,7 +184,7 @@ async function render(doFit=false){
   $('stage-note').textContent=m.corrected?'左右具有相同的扫描表面积：左侧看真实牙体形状，右侧看五个牙面及肩台归属。颈缘裁掉哪些部分，请切换“颈缘修正前后”。':'左右直接比较提取与后续分区：如果左侧完整、右侧缺失，排查去龈和分区裁剪；如果两边均缺失，向前检查提取或输入。区域颜色零碎、互相侵入而几何仍完整，则是标签问题。';
   const ring=c.qa?.cervical_sections?.shoulder_ring;
   if(ring)$('stage-note').textContent+=ring.status==='applied'?' 肩台使用连续条带环先验，低支持段可能是推断，闭环不等于整圈都有真实肩台。':' 本例未形成合法闭环；没有肩台输出不代表原牙没有肩台。';
-  legend([[1,'切端 / 咬合面'],[2,'唇 / 颊侧'],[3,'舌侧'],[4,'近中'],[5,'远中'],...SHOULDER_IDS.map(id=>[id,SHOULDER_NAMES[id]])].map(([id,name])=>[name,DISPLAY_PALETTE[id]||'#96a3b2']));
+  legend([[1,'切端 / 咬合面'],[2,'唇面'],[3,'舌面'],[4,'近中'],[5,'远中'],...SHOULDER_IDS.map(id=>[id,SHOULDER_NAMES[id]])].map(([id,name])=>[name,DISPLAY_PALETTE[id]||'#96a3b2']));
  }
  if($('non-source').checked){if(stage==='extraction'&&m.extracted_non_source)add(right,m.extracted_non_source,'#ff8a28',{order:3});if(stage==='segmentation'){if(m.extracted_non_source)add(left,m.extracted_non_source,'#ff8a28',{order:3});if(m.segmented_non_source)add(right,m.segmented_non_source,'#ff8a28',{order:3})}}
  const warning=executionNote(c);if(warning)$('stage-note').textContent+=' '+warning+'。';

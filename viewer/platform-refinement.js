@@ -205,7 +205,7 @@ function updateUrl() {
 function makeLegend() {
   $('legend').replaceChildren();
   const mode = $('display-mode').value;
-  let items = mode === 'color' ? [['扫描原色','#bbd6d7']] : mode === 'grey' ? [['最终牙体','#b2becb']] : mode === 'shoulder' ? [['牙体','#758698'],...SHOULDER_IDS.map(id=>[SHOULDER_NAMES[id],paletteColor(id)])] : [[Number(current.prep_fdi) === 11 ? '切端' : '咬合面',paletteColor(1)],['唇 / 颊侧',paletteColor(2)],['舌侧',paletteColor(3)],['近中',paletteColor(4)],['远中',paletteColor(5)],...SHOULDER_IDS.map(id=>[SHOULDER_NAMES[id],paletteColor(id)])];
+  let items = mode === 'color' ? [['扫描原色','#bbd6d7']] : mode === 'grey' ? [['最终牙体','#b2becb']] : mode === 'shoulder' ? [['牙体','#758698'],...SHOULDER_IDS.map(id=>[SHOULDER_NAMES[id],paletteColor(id)])] : [[Number(current.prep_fdi) === 11 ? '切端' : '咬合面',paletteColor(1)],['唇面',paletteColor(2)],['舌面',paletteColor(3)],['近中',paletteColor(4)],['远中',paletteColor(5)],...SHOULDER_IDS.map(id=>[SHOULDER_NAMES[id],paletteColor(id)])];
   if ($('removed').checked && available(current.models?.[removedKey()])) items.push([removedName(),'#ffa326']);
   for (const [name,color] of items) {
     const item = document.createElement('span'), swatch = document.createElement('i'), resolved = new THREE.Color();

@@ -71,7 +71,7 @@ function choose(id){
  for(const b of $('cases').querySelectorAll('button'))b.setAttribute('aria-pressed',String(b.dataset.case===c.id));history.replaceState(null,'','#'+c.id);render(true);
 }
 for(const c of data.cases){const b=document.createElement('button');b.className='case';b.dataset.case=c.id;b.textContent=c.name;b.onclick=()=>choose(c.id);$('cases').append(b)}
-for(const [sid,name] of [[1,'切端 / 咬合面'],[2,'唇 / 颊侧'],[3,'舌侧'],[4,'近中'],[5,'远中'],...SHOULDER_IDS.map(id=>[id,SHOULDER_NAMES[id]])]){const item=document.createElement('span');item.textContent='● '+name;item.style.color=DISPLAY_PALETTE[sid];$('legend').append(item)}
+for(const [sid,name] of [[1,'切端 / 咬合面'],[2,'唇面'],[3,'舌面'],[4,'近中'],[5,'远中'],...SHOULDER_IDS.map(id=>[id,SHOULDER_NAMES[id]])]){const item=document.createElement('span');item.textContent='● '+name;item.style.color=DISPLAY_PALETTE[sid];$('legend').append(item)}
 
 for(const b of $('views').querySelectorAll('[data-view]'))b.onclick=()=>{view=b.dataset.view;fit()};$('fit').onclick=fit;
 for(const id of ['left-mode','display-mode','linked','axes','back-grey','boundary','wire'])$(id).onchange=()=>render(false);$('section-angle').oninput=section;$('show-section').onchange=section;

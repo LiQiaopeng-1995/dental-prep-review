@@ -280,7 +280,7 @@ function makeLegend() {
   $('legend').replaceChildren();
   const mode = $('display-mode').value;
   const shoulders = SHOULDER_IDS.map(id => [SHOULDER_NAMES[id],paletteColor(id)]);
-  let items = mode === 'color' ? [['扫描原色','#bbd6d7']] : ['grey','repair'].includes(mode) ? [['最终牙体','#b2becb']] : mode === 'shoulder' ? [['其余牙体','#758698'],...shoulders] : [[Number(current.prep_fdi) === 11 ? '切端' : '咬合面',paletteColor(1)],['唇 / 颊侧',paletteColor(2)],['舌侧',paletteColor(3)],['近中',paletteColor(4)],['远中',paletteColor(5)],...shoulders];
+  let items = mode === 'color' ? [['扫描原色','#bbd6d7']] : ['grey','repair'].includes(mode) ? [['最终牙体','#b2becb']] : mode === 'shoulder' ? [['其余牙体','#758698'],...shoulders] : [[Number(current.prep_fdi) === 11 ? '切端' : '咬合面',paletteColor(1)],['唇面',paletteColor(2)],['舌面',paletteColor(3)],['近中',paletteColor(4)],['远中',paletteColor(5)],...shoulders];
   if ($('removed').checked && available(current.models?.[removedKey()])) items.push([removedName(),'#ffa326']);
   if (autoHoleReview()) {
     if (mode === 'segmentation' && (!autoHoleBoundaryLabels() || autoHoleReview().report?.label_assignment?.unresolved_faces > 0)) items.push([autoHoleBoundaryLabels() ? '未知 / 缺少有效分区边界' : '估计补面 / 未知标签 0',paletteColor(0)]);
